@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Connect All
 
 #### User Stories
