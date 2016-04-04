@@ -1,2 +1,7 @@
 # connectall
 connectall group project
+
+## Librarian stories
+* I am a Librarian and I'm starting to realize the importance of technology. Many people come to ask me questions at the help desk about their devices, but because there's only one of me I often don't have time to spend more than 5 minutes with one person. My collegues and I have made brochures to give to people regarding tech help, but they're not all encompassing.
+* I am a Librarian at an innercity main branch library. Our library offers one month classes on using a computer for the first time. The classes run weekly on Thursdays for three hours. Sometimes we have trained volunteers to teach the classes, but other times my colleagues or I will teach them. Our classes take people from never using a keyboard, to creating an email account, to creating and sending word documents. These are the basic computer skills people need to be productive on their own.
+* I am the leader of the tech lab at a homeless shelter. Many people do not have access to a computer or smart device, so they come to our tech lab to check in with the digital world. Some people use our computers daily for leisure, while others will use our computers to search and apply for jobs. We also hold intro to computer classes once a month where we'll teach people how to use windows computers, word/excel, flashdrives/cloud storage, basic internet searching, email, and finally typing.
