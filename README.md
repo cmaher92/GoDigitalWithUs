@@ -6,3 +6,4 @@
 * I am a male in my 40s under the poverty line. I want to use the Internet to connect with family and friends on Facebook.
 * I am a homeless male in my 50s. I want to use the Internet to get a job.
 * I am a female in my 30s under the poverty line. I want to use the Internet to find an apartment to rent.
+* I am an adult in Kentucky and want to use Team Treehouse to learn to code.
