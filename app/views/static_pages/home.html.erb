@@ -1,2 +1,19 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="row">
+  <div id="create_tutorial">
+    <%= form_tag("/create", method: "get") do %>
+      <%= submit_tag("Create Tutorial")%>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div id="beginner_suite">
+
+  </div>
+</div>
+
+<div class="row">
+<div id="main_content">
+  <h3>Popular Tutorials</h3>
+  <%= render 'shared/feed' %>
+</div>
