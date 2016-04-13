@@ -1,5 +1,10 @@
 <h1>New Tutorial</h1>
-
+<!--
 <%= render 'form' %>
 
-<%= link_to 'Back', tutorials_path %>
+<%= link_to 'Back', tutorials_path %> -->
+<%= simple_form_for(@tutorial) do |f| %>
+  <div class="form-group">
+    <%= f.input :content, input_html: { class: 'summernote' } %>
+  </div>
+<% end %>
