@@ -1,0 +1,10 @@
+<div class="container">
+  <%= link_to "home", root_path, id: "logo" %>
+  <%= form_tag("/search", method: "get") do %>
+    <%= label_tag(:q, "Search for tutorials here!") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search")%>
+  <% end %>
+</div>
+  
+
