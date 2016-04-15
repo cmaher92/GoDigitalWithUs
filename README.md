@@ -1,8 +1,8 @@
 <p align="center">
   <b>Connect All</b><br>
   <i>Platform to help gap the Digital Divide in collaboration with the White House</i><br>
-  <a href="http://make.sc/whitehouse">Initiative</a> |
-  <a href="https://www.makeschool.com/founding-class">Make School</a> 
+  <a href="http://make.sc/whitehouse">The Initiative</a> |
+  <a href="https://www.makeschool.com/founding-class">Make School</a>
   <!--<a href="#">Press Kit</a>-->
   <br><br>
   <img src="https://www.whitehouse.gov/profiles/forall/modules/custom/gov_whitehouse_www/images/icons/wh_logo_seal.png" height="100" />
