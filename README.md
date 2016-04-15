@@ -1,4 +1,15 @@
-# Connect All
+<p align="center">
+  <b>Connect All</b><br>
+  <i>Platform to help gap the Digital Divide in collaboration with the White House</i><br>
+  <a href="http://make.sc/whitehouse">Initiative</a> |
+  <a href="https://www.makeschool.com/founding-class">Make School</a> 
+  <!--<a href="#">Press Kit</a>-->
+  <br><br>
+  <img src="https://www.whitehouse.gov/profiles/forall/modules/custom/gov_whitehouse_www/images/icons/wh_logo_seal.png" height="100" />
+</p>
+
+
+## What is Connect All?
 Curated online repository of internet/computer skill tutorials created by “tech helpers” nationwide as a mobile-friendly, responsive web-application.  The web-app ships with a basic suite of tutorials designed to help teach people the basic skills and knowledge needed to eliminate the digital divide.
 
 ## How did this start?
@@ -7,14 +18,14 @@ In President Obama's [recent initiative](make.sc/whitehouse) he calls on the tec
 ## Who are we?
 We are four students from [Make School](http://makeschool.com) a two-year college alternative dedicated to computer-science and entrepreneurship located in San Francisco, CA. 
 
-### What Technologies leveraged?
+## What Technologies leveraged?
 Our current stack is *Ruby on Rails* with *Angular*. 
 
-### Git Guidelines
+## Git Guidelines
 1. All git commits will be present tense
 2. Follow the workflow
 
-### Team Workflow
+## Team Workflow
 1. Fetch and merge changes from the remote `git fetch` & `git merge origin/master`
 2. Create a branch to work on a new project feature `git branch <new_feature_name>`
 3. Develop the feature on your branch and commit your work `git commit -m "<present tense commit message"`
