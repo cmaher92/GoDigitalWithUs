@@ -7,7 +7,7 @@
   <br><br>
   <img src="https://www.whitehouse.gov/profiles/forall/modules/custom/gov_whitehouse_www/images/icons/wh_logo_seal.png" height="100" />
 </p>
-
+---
 
 ### What is Connect All?
 Curated online repository of internet/computer skill tutorials created by “tech helpers” nationwide as a mobile-friendly, responsive web-application.  The web-app ships with a basic suite of tutorials designed to help teach people the basic skills and knowledge needed to eliminate the digital divide.
