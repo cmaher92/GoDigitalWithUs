@@ -1,6 +1,6 @@
 <p align="center">
-  <b>ConnectAll</b><br>
-  <i>Platform to help gap the Digital Divide in collaboration with the White House</i><br>
+  <b>ConnectALL</b><br>
+  <i>Platform to help close the Digital Divide gap in collaboration with the White House</i><br>
   <a href="http://make.sc/whitehouse">The Initiative</a> |
   <a href="https://www.makeschool.com/founding-class">Make School</a>
   <!--<a href="#">Press Kit</a>-->
@@ -9,8 +9,8 @@
 </p>
 ---
 
-### What is ConnectAll?
-Curated online repository of internet/computer skill tutorials created by “tech helpers” nationwide as a mobile-friendly, responsive web-application.  The web-app ships with a basic suite of tutorials designed to help teach people the basic skills and knowledge needed to eliminate the digital divide.
+### What is ConnectALL?
+Curated online repository of internet/computer skill tutorials created by “tech helpers” nationwide as a mobile-friendly, responsive web-application. The web-app ships with a basic suite of tutorials designed to help teach people the basic skills and knowledge needed to eliminate the digital divide.
 
 ### How did this start?
 In the Obama Administration's [recent initiative](make.sc/whitehouse) he calls on the tech community to help the United States move more of it's population on to the Internet. This is our response, directly in collaboration with the White House, we are building a platform to help librarians and tech-helpers around the country better assist those looking to become connected. This project best serves it's goals by being open source, and would appreciate any assistance that could be provided.
