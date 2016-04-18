@@ -12,7 +12,8 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @tutorial.content %>
+  <%= raw @tutorial.content %>
+  <%# rendering raw html b/c that's what the content is %>
 </p>
 
 <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
