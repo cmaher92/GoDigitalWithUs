@@ -11,6 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
+//= require codemirror
+//= require summernote
+//= require summernote/locales/ko-KR
+//= require summernote/plugin/hello/summernote-ext-hello
 //= require_tree .

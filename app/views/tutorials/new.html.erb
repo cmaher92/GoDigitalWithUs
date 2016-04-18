@@ -1,5 +1,21 @@
-<h1>New Tutorial</h1>
+<div class="container create-tutorial">
 
-<%= render 'form' %>
+  <h1>New Tutorial</h1>
+  <!--
+  Title fill in
+  Tagline fill in
+  Publish Button
+  -->
+  <%= simple_form_for(@tutorial) do |f| %>
+    <div class="form-group">
+      <%= f.button :submit, :value => "Publish", :class => "save" %>
+      <%= f.input :title, :placeholder => "Title", :label => false %>
+      <%= f.input :tagline, :placeholder => "Tagline", :label => false %>
+    </div>
 
-<%= link_to 'Back', tutorials_path %>
+    <div class="form-group">
+      <%= f.input :content, :label => false, :input_html => { :class => "summernote" } %>
+    </div>
+  <% end %>
+
+</div>
