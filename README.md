@@ -10,16 +10,19 @@
 ---
 
 ### What is ConnectALL?
-Curated online repository of internet/computer skill tutorials created by “tech helpers” nationwide as a mobile-friendly, responsive web-application. The web-app ships with a basic suite of tutorials designed to help teach people the basic skills and knowledge needed to eliminate the digital divide.
+Our project is a curated online repository of internet/computer skill tutorials created by a nationwide community of “tech helpers” as a mobile-friendly, responsive web-application. Our web app ships with a basic suite of digital literacy tutorials designed to help teach people the basic skills and knowledge needed to eliminate the digital divide.
 
 ### How did this start?
-In the Obama Administration's [recent initiative](make.sc/whitehouse) he calls on the tech community to help the United States move more of it's population on to the Internet. This is our response, directly in collaboration with the White House, we are building a platform to help librarians and tech-helpers around the country better assist those looking to become connected. This project best serves it's goals by being open source, and would appreciate any assistance that could be provided.
+In the Obama Administration's [recent initiative](make.sc/whitehouse) he calls on the tech community to help the United States move more of its population on to the Internet. This is our response, directly and in collaboration with the White House. We are building a platform to help librarians and "tech helpers" around the country better assist those looking to become connected. This project is open-source--any help is appreciated!
 
 ### Who are we?
-We are four students from [Make School](http://makeschool.com) a two-year college alternative dedicated to computer-science and entrepreneurship located in San Francisco, CA. 
+We are four students from [Make School](http://makeschool.com), a two-year college alternative dedicated to computer science and entrepreneurship.  Make School is located in San Francisco, CA.
+
+### How can you help?
+Like any open-source project, we welcome pull requests! We are looking for volunteers with the technical skills necessary to help us build and maintain this project.  Alternatively, you can help by logging on to the web app and creating content in the form of tutorials!
 
 ### What Technologies leveraged?
-Our current stack is *Ruby on Rails* with *Angular*. 
+Our current stack is *Ruby on Rails* with *Bootstrap*.
 
 ### Git Guidelines
 1. All git commits will be present tense
