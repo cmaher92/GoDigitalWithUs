@@ -1,0 +1,7 @@
+<ul class="tutorials">
+  <% @tutorials.each do |tutorial| %>
+    <li>
+      <%= link_to tutorial.title, tutorial %>
+    </li>
+  <% end %>
+</ul>
