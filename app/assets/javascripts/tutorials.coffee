@@ -2,88 +2,47 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  $('.summernote').summernote
-    height: 400
-    lang: 'eng'
-    airMode: true
-    placeholder: 'Share your knowledge...'
-    dialogsInBody: true
-  $('.summernote').summernote
-    popover: [
-      air: [
-        [
-          'style'
+    $('.summernote-title').summernote
+      height: 400
+      lang: 'eng'
+      airMode: true
+      placeholder: 'Title'
+
+    $('.summernote-description').summernote
+      height: 400
+      lang: 'eng'
+      airMode: true
+      placeholder: 'Description'
+
+    $('.summernote').summernote
+      height: 400
+      lang: 'eng'
+      # airMode: true
+      placeholder: "Share your knowledge!"
+      popover: [
+        air: [
           [
-            'bold'
-            'italic'
-            'underline'
-            'clear'
+            'style'
+            [
+              'bold'
+              'italic'
+              'underline'
+              'clear'
+            ]
           ]
-        ]
-        [
-          'para'
           [
-            'ul'
-            'ol'
-            'paragraph'
+            'para'
+            [
+              'ul'
+              'ol'
+              'paragraph'
+            ]
           ]
-        ]
-        [
-          'insert'
           [
-            'hello'
+            'insert'
+            [
+              'hello'
+            ]
           ]
         ]
       ]
-    ]
-  # $('.summernote-plugin').summernote
-  #   height: 280
-  #   toolbar: [
-  #     [
-  #       'style'
-  #       [
-  #         'bold'
-  #         'italic'
-  #         'underline'
-  #         'clear'
-  #       ]
-  #     ]
-  #     [
-  #       'font'
-  #       [ 'strikethrough' ]
-  #     ]
-  #     [
-  #       'fontsize'
-  #       [ 'fontsize' ]
-  #     ]
-  #     [
-  #       'color'
-  #       [ 'color' ]
-  #     ]
-  #     [
-  #       'para'
-  #       [
-  #         'ul'
-  #         'ol'
-  #         'paragraph'
-  #       ]
-  #     ]
-  #     [
-  #       'height'
-  #       [ 'height' ]
-  #     ]
-  #     [
-  #       'table'
-  #       [ 'table' ]
-  #     ]
-  #     [
-  #       'chart'
-  #       [ 'chart' ]
-  #     ]
-  #     [
-  #       'insert'
-  #       [
-  #         'hello'
-  #       ]
-  #     ]
-  #   ]

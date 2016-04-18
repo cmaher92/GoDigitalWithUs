@@ -1,21 +1,26 @@
-<div class="container create-tutorial">
+<%= simple_form_for(@tutorial, :defaults => { :input_html => { :class => "form-control" } }) do |f| %>
+  <!-- This row houses the Title & Tagline input fields and the button -->
 
-  <h1>New Tutorial</h1>
-  <!--
-  Title fill in
-  Tagline fill in
-  Publish Button
-  -->
-  <%= simple_form_for(@tutorial) do |f| %>
-    <div class="form-group">
-      <%= f.button :submit, :value => "Publish", :class => "save" %>
-      <%= f.input :title, :placeholder => "Title", :label => false %>
-      <%= f.input :tagline, :placeholder => "Tagline", :label => false %>
+<div class="form-group row">
+  <div class="col-sm-8">
+    <div class="input-group input-group">
+      <span class="input-group-addon" id="sizing-addon1">Tutorial</span>
+      <%= f.input :title, :label => false, :input_html => { :class => "form-control" } %>
     </div>
-
-    <div class="form-group">
-      <%= f.input :content, :label => false, :input_html => { :class => "summernote" } %>
-    </div>
-  <% end %>
-
+  <br>
+  <div class="input-group input-group">
+    <span class="input-group-addon" id="sizing-addon1">Description</span>
+    <%= f.input :tagline, :label => false, :input_html => { :class => "form-control" } %>
+  </div>
+  </div>
+  <div class="col-sm-4">
+  <%= f.button :submit, :value => "Publish", :class => "btn btn-default" %>
+  </div>
 </div>
+
+<div class="container-content">
+<div class="form-group">
+  <%= f.input :content, :label => false, :input_html => { :class => "summernote" } %>
+</div>
+</div>
+  <% end %>
