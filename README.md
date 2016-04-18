@@ -29,6 +29,7 @@ Our current stack is *Ruby on Rails* with *Bootstrap*.
 2. Follow the workflow
 
 ### Team Workflow
+0. Git status and remove things from stagint that don't belong `git status` & `git rm <filename>`
 1. Fetch and merge changes from the remote `git fetch` & `git merge origin/master`
 2. Create a branch to work on a new project feature `git branch <new_feature_name>`
 3. Develop the feature on your branch and commit your work `git commit -m "<present tense commit message"`
