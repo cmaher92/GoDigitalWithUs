@@ -8,3 +8,38 @@
 // import stylsheets
 @import "scaffolds";
 @import "tutorials";
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #fff;
+
+  .header-container {
+    #logo {
+      flex-grow: 1;
+      margin-top: 13px;
+    }
+    #search-form {
+      margin-top: 11px;
+      flex-grow: 2;
+      #search-text {
+        width: 80%;
+      }
+      #search-submit {
+        float: right;
+        width: 18%;
+      }
+    }
+    #flex-right {
+      flex-grow: 1;
+    }
+  }
+}

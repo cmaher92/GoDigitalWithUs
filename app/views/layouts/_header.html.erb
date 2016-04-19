@@ -1,10 +1,14 @@
-<div class="container">
-  <%= link_to "home", root_path, id: "logo" %>
-  <%= form_tag("/search", method: "get") do %>
-    <%= label_tag(:q, "Search for tutorials here!") %>
-    <%= text_field_tag(:q) %>
-    <%= submit_tag("Search")%>
-  <% end %>
+<div class="header navbar">
+  <div class="container header-container flex-row">
+    <div id="logo">
+      <%= link_to "home", root_path %>
+    </div>
+    <div id="search-form">
+      <%= form_tag("/search", method: "get") do %>
+        <%= text_field_tag :search, params[:q], :placeholder => "Search for tutorials here!", :id => "search-text" %>
+        <%= submit_tag("Search", :id => "search-submit") %>
+      <% end %>
+    </div>
+    <div id="flex-right"></div>
+  </div>
 </div>
-  
-
