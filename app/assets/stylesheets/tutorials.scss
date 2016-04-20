@@ -23,6 +23,27 @@ $white: #ffffff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+#level-row {
+  flex-grow: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  ul {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.clear {
+  clear:both;
+}
+
+#create-tutorial {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+}
+
 #tutorial {
   padding-left: 8%;
   padding-right: 8%;
