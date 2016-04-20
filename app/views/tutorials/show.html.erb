@@ -1,20 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @tutorial.title %>
-</p>
+<h2><%= @tutorial.title %></h2>
 
-<p>
-  <strong>Tagline:</strong>
-  <%= @tutorial.tagline %>
-</p>
+<h3><%= @tutorial.tagline %></h3>
 
-<p>
-  <strong>Content:</strong>
-  <%= raw @tutorial.content %>
-  <%# rendering raw html b/c that's what the content is %>
-</p>
+<%= raw @tutorial.content %>
 
 <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
 <%= link_to 'Back', tutorials_path %>
