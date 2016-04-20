@@ -10,6 +10,7 @@ class TutorialsController < ApplicationController
   # GET /tutorials/1
   # GET /tutorials/1.json
   def show
+    @suggestions = Tutorial.first(3)
   end
 
   # GET /tutorials/new
