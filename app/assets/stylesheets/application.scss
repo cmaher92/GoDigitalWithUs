@@ -6,9 +6,8 @@
 // @import "example"
 
 // import stylsheets
-<<<<<<< HEAD
-@import "scaffolds";
-@import "tutorials";
+@import "scaffolds.scss";
+@import "tutorials.scss";
 
 .flex-row {
   display: flex;
@@ -52,7 +51,3 @@
     text-align: center;
   }
 }
-=======
-@import "scaffolds.scss";
-@import "tutorials.scss";
->>>>>>> dc56dccc090dccb8547ade119d0aa54b25c6d4f2
