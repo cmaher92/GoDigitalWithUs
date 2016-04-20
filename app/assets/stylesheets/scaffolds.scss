@@ -1,33 +1,101 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather:700|Source+Sans+Pro:400,700,400italic);
+
+// Font Variables
+$merriweather: 'Merriweather', serif;
+$source-sans-pro: 'Source Sans Pro', verdana, arial, helvetica, sans-serif;
+
+// Background Color Variables
+$gray-dark: #323a45;
+$gray: #5b616b;
+$gray-light: #aeb0b5;
+$gray-lightest: #f1f1f1;
+
+// Font Color Variables
+$base: #212121;
+$primary: #0071bc;
+$primary-darkest: #112e51;
+$focus: #3e94cf;
+$visited: #4c2c92;
+
+// Secondary Color Variables
+$secondary-dark: #cd2026;
+
+// Tertiary Color Variables
+$green: #2e8540;
+
 body {
-  background-color: #f8f8f8;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: $gray-lightest;
+  color: $base;
+  font-family: $source-sans-pro;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* headers */
+h1 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3em/52px;
+}
+
+h2 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3em/39px;
+}
+
+h3 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3em/26px;
+}
+
+h4 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.3em/20px;
+}
+
+h5 {
+  font-family: $merriweather;
+  font-weight: 700;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.3em/17px;
+}
+
+h6 {
+  font-family: $source-sans-pro;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.3em/17px;
+  text-transform: uppercase
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: $source-sans-pro;
 }
 
+/* debugger for dev */
 pre {
-  background-color: #eee;
+  background-color: $gray-lightest;
   padding: 10px;
-  font-size: 11px;
+  font-size: 10px;
 }
 
+/* links */
 a {
-  color: #000;
-
+  color: $primary;
   &:visited {
-    color: #666;
+    color: $visited;
   }
-
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: $focus;
+    background-color: $gray-lightest;
   }
 }
 
@@ -38,22 +106,22 @@ div {
 }
 
 #notice {
-  color: green;
+  color: $green;
 }
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: $secondary-dark;
   display: table;
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  border: 2px solid $secondary-dark;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: $gray-lightest;
 
   h2 {
     text-align: left;
@@ -62,8 +130,8 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
+    background-color: $secondary-dark;
+    color: white;
   }
 
   ul li {
