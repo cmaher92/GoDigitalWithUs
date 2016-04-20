@@ -1,53 +1,23 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "codemirror";
+@import "codemirror";           // versatile text editor implemented in JS for browser
+@import "summernote";           // super simple WYSIWYG editor
 
-@import "summernote";
-// @import "example"
-
-// import stylsheets
+// import stylesheets
 @import "scaffolds.scss";
 @import "tutorials.scss";
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  background-color: #fff;
-
-  .header-container {
-    #logo {
-      flex-grow: 1;
-      margin-top: 13px;
-    }
-    #search-form {
-      margin-top: 11px;
-      flex-grow: 2;
-      #search-text {
-        width: 80%;
-      }
-      #search-submit {
-        float: right;
-        width: 18%;
-      }
-    }
-    #flex-right {
-      flex-grow: 1;
-    }
-  }
-}
-
-.footer {
-  background-color: #fff;
-  #footer-row {
-    flex-grow: 1;
-    text-align: center;
-  }
-}

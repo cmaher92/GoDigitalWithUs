@@ -14,6 +14,7 @@ $gray-lightest: #f1f1f1;
 // Font Color Variables
 $base: #212121;
 $primary: #0071bc;
+$primary-darker: #205493;
 $primary-darkest: #112e51;
 $focus: #3e94cf;
 $visited: #4c2c92;
@@ -23,6 +24,16 @@ $secondary-dark: #cd2026;
 
 // Tertiary Color Variables
 $green: #2e8540;
+
+// Other Variables
+$placeholder-padding-left: 5px;
+
+
+// TODO: fix this so header doesn't have rounded corners
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: $gray-lightest;
@@ -105,6 +116,27 @@ div {
   }
 }
 
+// TODO: use mixin
+/* Webkit */
+::-webkit-input-placeholder {
+  padding-left: $placeholder-padding-left;
+}
+
+/* Firefox 4-18 */
+:-moz-placeholder {
+  padding-left: $placeholder-padding-left;
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+  padding-left: $placeholder-padding-left;
+}
+
+/* IE10+ */
+:-ms-input-placeholder {
+  padding-left: $placeholder-padding-left;
+}
+
 #notice {
   color: $green;
 }
@@ -137,5 +169,74 @@ div {
   ul li {
     font-size: 12px;
     list-style: square;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.float-left {
+  float: left;
+  margin-left: 10%;
+}
+
+.float-right {
+  float: right;
+  margin-right: 10%;
+}
+
+#top {
+  background-color: $gray-lightest;
+}
+
+.header {
+  background-color: $primary-darker;
+  .header-container {
+    #logo {
+      flex-grow: 1;
+      margin-top: 13px;
+    }
+    #search-form {
+      margin-top: 11px;
+      flex-grow: 2;
+      // TODO: use jQuery to find height of navbar & set vertical center
+      #search-text {
+        width: 80%;
+        margin-top: 13px;
+        height: 32px;
+      }
+      // TODO: use jQuery to find height of navbar & set vertical center
+      #search-submit {
+        float: right;
+        width: 18%;
+        margin-top: 13px;
+      }
+    }
+    #flex-right {
+      flex-grow: 1;
+    }
+  }
+}
+
+#logo {
+  margin: 10px;
+  a:hover {
+    text-decoration: none;
+    background-color: $primary-darker;
+  }
+}
+
+.footer {
+  background-color: #fff;
+  #footer-row {
+    flex-grow: 1;
+    text-align: center;
   }
 }
