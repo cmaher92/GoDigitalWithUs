@@ -246,10 +246,20 @@ div {
 }
 
 .footer {
-  background-color: #fff;
-  #footer-row {
-    flex-grow: 1;
-    text-align: center;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  background-color: $primary-darker;
+  text-align: center;
+  a {
+    color: $gray-lightest;
+    &:visited {
+      color: $gray-dark;
+    }
+    &:hover {
+      color: $focus;
+      text-decoration: none;
+      background-color: $primary-darker;
+    }
   }
 }
 
