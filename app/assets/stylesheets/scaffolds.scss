@@ -10,6 +10,7 @@ $gray-dark: #323a45;
 $gray: #5b616b;
 $gray-light: #aeb0b5;
 $gray-lightest: #f1f1f1;
+$gray-cool-light: #dce4ef;
 
 // Font Color Variables
 $base: #212121;
@@ -184,12 +185,18 @@ div {
 
 .float-left {
   float: left;
-  margin-left: 10%;
 }
 
 .float-right {
   float: right;
-  margin-right: 10%;
+}
+
+.level-row {
+  background-color: $gray-lightest;
+  ul {
+    display: table;
+    margin: 0 auto;
+  }
 }
 
 #top {
@@ -197,31 +204,36 @@ div {
 }
 
 .header {
-  background-color: $primary-darker;
+  background-color: $gray-lightest;
   .header-container {
     #logo {
-      flex-grow: 1;
+      
       margin-top: 13px;
     }
-    #search-form {
-      margin-top: 11px;
-      flex-grow: 2;
-      // TODO: use jQuery to find height of navbar & set vertical center
-      #search-text {
-        width: 80%;
-        margin-top: 14px;
-        height: 32px;
-      }
-      // TODO: use jQuery to find height of navbar & set vertical center
-      #search-submit {
-        float: right;
-        width: 18%;
-        margin-top: 13px;
-      }
-    }
-    #flex-right {
-      flex-grow: 1;
-    }
+
+  }
+}
+
+.search-bar {
+  background-color: $primary-darker;
+  height: 80px;
+}
+
+#search-form {
+  margin-top: 11px;
+  
+  width: 100%;
+  // TODO: use jQuery to find height of navbar & set vertical center
+  #search-text {
+    width: 80%;
+    margin-top: 14px;
+    height: 32px;
+  }
+  // TODO: use jQuery to find height of navbar & set vertical center
+  #search-submit {
+    float: right;
+    width: 18%;
+    margin-top: 13px;
   }
 }
 
@@ -229,7 +241,7 @@ div {
   margin: 10px;
   a:hover {
     text-decoration: none;
-    background-color: $primary-darker;
+    background-color: $gray-lightest;
   }
 }
 
@@ -240,3 +252,42 @@ div {
     text-align: center;
   }
 }
+
+.card {
+  height: 180px;
+  padding: 15px;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-margin {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.card-image {
+  margin-right: 15px;
+}
+
+.card-padding {
+  padding: 10px;
+}
+
+.card-title {
+  margin-top: 0px;
+}
+
+.card-text {
+  overflow: hidden;
+  height: 145px;
+}
+
+.beginner-suite {
+  margin-top: 25px;
+}
+
+
+
+
