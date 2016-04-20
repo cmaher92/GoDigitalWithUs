@@ -1,20 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @tutorial.title %>
-</p>
+<div id="tutorial">
+  <div id="tutorial-title">
+    <h2><%= @tutorial.title %></h2>
+  </div>
 
-<p>
-  <strong>Tagline:</strong>
-  <%= @tutorial.tagline %>
-</p>
+  <div id="tutorial-tagline">
+    <h4><%= @tutorial.tagline %><h4>
+  </div>
 
-<p>
-  <strong>Content:</strong>
-  <%= raw @tutorial.content %>
-  <%# rendering raw html b/c that's what the content is %>
-</p>
+  <div id="tutorial-content">
+    <%= raw @tutorial.content %>
+    <%# rendering raw html b/c that's what the content is %>
+  </div>
+
+  <div id="tutorial-suggestions">
+    <h4>Suggested for You</h4>
+    <ul id="suggestions-ul">
+      <% @suggestions.each do |suggestion| %>
+        <li id="suggestions-li">
+          <%= link_to suggestion.title, suggestion %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
 <%= link_to 'Back', tutorials_path %>
