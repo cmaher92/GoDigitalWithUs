@@ -3,7 +3,7 @@
 <div class="container">
   <div class="card-content col-md-offset-2 col-md-8">
     <div class="row">
-      <div class="content col-md-12">
+      <div class="page-content col-md-12">
         <h2><%= @tutorial.title %></h2>
         <h3><%= @tutorial.tagline %></h3>
 
@@ -11,10 +11,10 @@
         <%= raw @tutorial.content %>
 
         <div class="float-right">
-          <h6><small>
+          <h3><small>
             <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
             <%= link_to 'Back', tutorials_path %>
-          </small></h6>
+          </small></h3>
         </div>
       </div>
     </div>

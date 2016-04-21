@@ -1,24 +1,40 @@
-.button {
-  float: right;
+.btn-primary {
+  background-color: $primary-darker;
+  &:hover {
+    background-color: $primary-alt-dark;
+    border: 1px solid $primary-alt-darkest;
+  }
 }
 
-.create-tutorial {
-  background-color: white;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 100vh;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-#create-tutorial {
-  float: right;
-  margin: 10px;
-  padding: 10px;
-}
-
-.content {
+.page-content {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.summernote {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid $gray-light;
+  border-radius: 5px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
 .suggestions {
@@ -27,12 +43,15 @@
   margin-bottom: -6px;
   margin-left: -25px;
   margin-right: -25px;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-bottom: 18px;
   padding-right: 15px;
   padding-left: 15px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  a:hover {
+    background-color: $gray-light;
+  }
   .ul {
     padding-left: 5%;
     padding-right: 5%;
@@ -42,9 +61,4 @@
     font-size: 16px;
     padding-right: 10%;
   }
-}
-
-#tutorial {
-  padding-left: 8%;
-  padding-right: 8%;
 }
