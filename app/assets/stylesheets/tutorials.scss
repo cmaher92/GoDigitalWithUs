@@ -1,6 +1,7 @@
 // Place all the styles related to the Tutorials controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+<<<<<<< HEAD
 
 .summernote-title {
   font-size: 32px;
@@ -14,4 +15,75 @@
 
 .container-content {
   height: 500px;
+=======
+$primary: #0071bc;
+$primary-darker: #205493;
+$primary-darkest: #112e51;
+$base: #212121;
+$gray-dark: #323a45;
+$gray-light: #aeb0b5;
+$white: #ffffff;
+
+
+
+.button {
+  float: right;
+}
+
+.create-tutorial {
+  background-color: $white;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100vh;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+>>>>>>> 8d371682753563994b1c54baf34f7a5998d3ba6d
+}
+
+#level-row {
+  flex-grow: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  ul {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.clear {
+  clear:both;
+}
+
+#create-tutorial {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+}
+
+#tutorial {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#suggestions-ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#suggestions-li {
+  display: inline;
+  padding-right: 10%;
+}
+
+#tutorial-suggestions {
+  background-color: $gray-light;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  padding-right: 20%;
+  padding-left: 20%;
+  position: absolute;
+  right: 0;
+  left: 0;
 }

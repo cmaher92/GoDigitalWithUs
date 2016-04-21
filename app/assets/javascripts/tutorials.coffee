@@ -2,47 +2,37 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-    $('.summernote-title').summernote
-      height: 400
-      lang: 'eng'
-      airMode: true
-      placeholder: 'Title'
-
-    $('.summernote-description').summernote
-      height: 400
-      lang: 'eng'
-      airMode: true
-      placeholder: 'Description'
-
-    $('.summernote').summernote
-      height: 400
-      lang: 'eng'
-      # airMode: true
-      placeholder: "Share your knowledge!"
-      popover: [
-        air: [
+$('.summernote').summernote
+    height: 400
+    lang: 'eng'
+    airMode: true
+    placeholder: 'Share your knowledge...'
+    dialogsInBody: true
+  $('.summernote').summernote
+    popover: [
+      air: [
+        [
+          'style'
           [
-            'style'
-            [
-              'bold'
-              'italic'
-              'underline'
-              'clear'
-            ]
-          ]
-          [
-            'para'
-            [
-              'ul'
-              'ol'
-              'paragraph'
-            ]
-          ]
-          [
-            'insert'
-            [
-              'hello'
-            ]
-          ]
+           ]
+           'bold'
+           'italic'
+           'underline'
+            'clear'
+           ]
         ]
-      ]
+        [
+          'para'
+         [
+          'ul'
+         'ol'
+         'paragraph'
+           ]
+        ]
+        [
+          'insert'
+            [
+            'hello'
+            ]
+         ]
+       ]
