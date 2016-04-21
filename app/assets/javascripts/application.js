@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require material
 //= require codemirror
 //= require summernote
 //= require summernote/locales/ko-KR

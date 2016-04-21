@@ -42,8 +42,6 @@ GEM
       json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-material-design (0.2.2)
-      bootstrap-sass (~> 3.0)
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -84,6 +82,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    material-design-rails (0.1.0)
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
@@ -165,7 +164,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-material-design
   bootstrap-sass (~> 3.3.5)
   byebug
   codemirror-rails
@@ -175,6 +173,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
+  material-design-rails
   rails (= 4.2.5.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

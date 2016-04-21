@@ -1,35 +1,3 @@
-// Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Merriweather:700|Source+Sans+Pro:400,700,400italic);
-
-// Font Variables
-$merriweather: 'Merriweather', serif;
-$source-sans-pro: 'Source Sans Pro', verdana, arial, helvetica, sans-serif;
-
-// Background Color Variables
-$gray-dark: #323a45;
-$gray: #5b616b;
-$gray-light: #aeb0b5;
-$gray-lightest: #f1f1f1;
-$gray-cool-light: #dce4ef;
-
-// Font Color Variables
-$base: #212121;
-$primary: #0071bc;
-$primary-darker: #205493;
-$primary-darkest: #112e51;
-$focus: #3e94cf;
-$visited: #4c2c92;
-
-// Secondary Color Variables
-$secondary-dark: #cd2026;
-
-// Tertiary Color Variables
-$green: #2e8540;
-
-// Other Variables
-$placeholder-padding-left: 5px;
-
-
 // TODO: fix this so header doesn't have rounded corners
 * {
   margin: 0;
@@ -115,27 +83,6 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
-}
-
-// TODO: use mixin
-/* Webkit */
-::-webkit-input-placeholder {
-  padding-left: $placeholder-padding-left;
-}
-
-/* Firefox 4-18 */
-:-moz-placeholder {
-  padding-left: $placeholder-padding-left;
-}
-
-/* Firefox 19+ */
-::-moz-placeholder {
-  padding-left: $placeholder-padding-left;
-}
-
-/* IE10+ */
-:-ms-input-placeholder {
-  padding-left: $placeholder-padding-left;
 }
 
 #notice {
@@ -253,7 +200,7 @@ div {
   a {
     color: $gray-lightest;
     &:visited {
-      color: $gray-dark;
+      color: $gray-lightest;
     }
     &:hover {
       color: $focus;
@@ -269,6 +216,15 @@ div {
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 2px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-content {
+  padding: 5px 25px;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 10px;
   border: 1px solid #eee;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
