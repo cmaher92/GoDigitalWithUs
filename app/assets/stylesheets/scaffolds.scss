@@ -225,7 +225,6 @@ div {
 }
 
 .card-content {
-  padding: 5px 25px;
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 10px;
@@ -258,6 +257,22 @@ div {
   margin-top: 25px;
 }
 
+.btn-primary {
+  background-color: $primary-darker;
+  &:hover {
+    background-color: $primary-alt-dark;
+    border: 1px solid $primary-alt-darkest;
+  }
+}
 
+.alert-success {
+  background-color: $green-lighter;
+  color: $base;
+}
+
+.page-content {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
 
