@@ -1,4 +1,4 @@
-<div class="search-bar">
+<div class="row search-bar">
   <div class="container col-md-offset-2 col-md-8">
     <div id="search-form">
       <%= form_tag("/search", method: "get") do %>
@@ -9,49 +9,46 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row beginner-suite">
-    <div>
-      <div class="col-md-4 col-sm-4 individual-levels level-row">
-        <div class="card-margin card">
-          <h3 align="center">Computer Basics</h3>
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-            <li>Link 4</li>
-          </ul>
+<div class="row beginner-suite">
+  <div class="container">
+    <div class="col-md-4 level-row">
+      <div class="card card-margin">
+        <h3 class="text-align-center">Computer Basics</h3>
+        <div class="ul text-align-center">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4 individual-levels level-row">
-        <div class="card-margin card">
-          <h3 align="center">Internet Basics</h3>
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-            <li>Link 4</li>
-          </ul>
+    </div>
+
+    <div class="col-md-4 level-row">
+      <div class="card card-margin">
+        <h3 class="text-align-center">Internet Basics</h3>
+        <div class="ul text-align-center">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4 individual-levels level-row">
-        <div class="card-margin card">
-          <h3 align="center">Advanced Internet</h3>
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-            <li>Link 4</li>
-          </ul>
+    </div>
+
+    <div class="col-md-4 level-row">
+      <div class="card card-margin">
+        <h3 class="text-align-center">Advanced Internet</h3>
+        <div class="ul text-align-center">
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row home-main">
-  <div id="container main_content">
-    
-    <%= render 'shared/feed' %>
-  </div>
+<div class="row">
+  <%= render 'shared/feed' %>
 </div>

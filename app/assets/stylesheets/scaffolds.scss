@@ -39,6 +39,12 @@ h4 {
   font-weight: 700;
   font-size: 17px;
   line-height: 1.3em/20px;
+  #smallest {
+    font-size:10px;
+  }
+  #largest {
+    font-size: 20px;
+  }
 }
 
 h5 {
@@ -85,10 +91,162 @@ div {
   }
 }
 
-#notice {
-  color: $green;
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* header */
+.header {
+  background-color: $gray-lightest;
+  margin-bottom: 15px;
+  #logo {      
+    margin: 10px;
+    margin-top: 15px;
+    a:hover {
+    text-decoration: none;
+    background-color: $gray-lightest;
+    }
+  }
+}
+
+/* footer */
+.footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: $primary-darker;
+  text-align: center;
+  a {
+    color: $gray-lightest;
+    &:visited {
+      color: $gray-lightest;
+    }
+    &:hover {
+      color: $focus;
+      text-decoration: none;
+      background-color: $primary-darker;
+    }
+  }
+}
+
+/* cards */
+.card {
+  background-color: white;
+  transition: box-shadow .25s;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.card-margin {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.card-padding {
+  padding: 20px;
+}
+
+.card-image {
+  margin-right: 15px;
+}
+
+.card-title {
+  margin-top: 0px;
+  a:hover {
+    background-color: white;
+  }
+}
+
+.card-text {
+  overflow: hidden;
+  height: 145px;
+}
+
+/* buttons */
+.btn-primary {
+  background-color: $primary-darker;
+  &:hover {
+    background-color: $primary-alt-dark;
+    border: 1px solid $primary-alt-darkest;
+  }
+}
+
+.alert-success {
+  background-color: $green-lighter;
+  color: $base;
+}
+
+.page-content {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+/* main page */
+.search-bar {
+  background-color: $primary-darker;
+  height: 80px;
+}
+
+#search-form {
+  margin-top: 11px;
+  // TODO: use jQuery to find height of navbar & set vertical center
+  #search-text {
+    width: 80%;
+    margin-top: 14px;
+    height: 32px;
+  }
+  // TODO: use jQuery to find height of navbar & set vertical center
+  #search-submit {
+    float: right;
+    width: 18%;
+    margin-top: 13px;
+  }
+}
+
+.beginner-suite {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $gray-dark;
+  .ul {
+    list-style: none;
+    padding-bottom: 30px;
+  }
+  li {
+    font-size: 16px;
+    padding-right: 10%;
+  }
+}
+
+
+
+
+
+
+
+/* unused */
 .field_with_errors {
   padding: 2px;
   background-color: $secondary-dark;
@@ -118,161 +276,6 @@ div {
     font-size: 12px;
     list-style: square;
   }
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.text-align-right {
-  text-align: right;
-}
-
-.level-row {
-  background-color: $gray-lightest;
-  ul {
-    display: table;
-    margin: 0 auto;
-  }
-}
-
-#top {
-  background-color: $gray-lightest;
-}
-
-.header {
-  background-color: $gray-lightest;
-  .header-container {
-    #logo {
-      
-      margin-top: 13px;
-    }
-
-  }
-}
-
-.search-bar {
-  background-color: $primary-darker;
-  height: 80px;
-}
-
-#search-form {
-  margin-top: 11px;
-  
-  width: 100%;
-  // TODO: use jQuery to find height of navbar & set vertical center
-  #search-text {
-    width: 80%;
-    margin-top: 14px;
-    height: 32px;
-  }
-  // TODO: use jQuery to find height of navbar & set vertical center
-  #search-submit {
-    float: right;
-    width: 18%;
-    margin-top: 13px;
-  }
-}
-
-#logo {
-  margin: 10px;
-  a:hover {
-    text-decoration: none;
-    background-color: $gray-lightest;
-  }
-}
-
-.footer {
-  margin-top: 15px;
-  padding-bottom: 20px;
-  background-color: $primary-darker;
-  text-align: center;
-  a {
-    color: $gray-lightest;
-    &:visited {
-      color: $gray-lightest;
-    }
-    &:hover {
-      color: $focus;
-      text-decoration: none;
-      background-color: $primary-darker;
-    }
-  }
-}
-
-.card {
-  height: 180px;
-  padding: 15px;
-  background-color: #fff;
-  transition: box-shadow .25s;
-  border-radius: 2px;
-  border: 1px solid #eee;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.card-content {
-  background-color: #fff;
-  transition: box-shadow .25s;
-  border-radius: 10px;
-  border: 1px solid #eee;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.card-margin {
-  margin: 0.5rem 0 1rem 0;
-}
-
-.card-image {
-  margin-right: 15px;
-}
-
-.card-padding {
-  padding: 10px;
-}
-
-.card-title {
-  margin-top: 0px;
-}
-
-.card-text {
-  overflow: hidden;
-  height: 145px;
-}
-
-.beginner-suite {
-  margin-top: 25px;
-}
-
-.btn-primary {
-  background-color: $primary-darker;
-  &:hover {
-    background-color: $primary-alt-dark;
-    border: 1px solid $primary-alt-darkest;
-  }
-}
-
-.alert-success {
-  background-color: $green-lighter;
-  color: $base;
-}
-
-.page-content {
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 

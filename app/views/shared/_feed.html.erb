@@ -1,15 +1,17 @@
-<div class="tutorials container">
-  <h2 class="col-sm-offset-2 col-sm-8">Popular Tutorials</h2>
+<div class="container">
+  <h2 class="col-md-offset-2 col-md-8">Popular Tutorials</h2>
   <% @tutorials.each do |tutorial| %>
-    <div class="row col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
-      <div class="card card-margin">
-        <div class="card-image float-left">
-          <img src="http://placehold.it/150x150">
-        </div>
-        <div class="card-text">
-          <h3 class="card-title"><%= link_to tutorial.title, tutorial %></h3>
-          <h5><%= tutorial.tagline %></h5>
-          <p><%= tutorial.content %></p>
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <div class="card card-padding card-margin">
+          <div class="card-image float-left">
+            <img src="http://placehold.it/150x150">
+          </div>
+          <div class="card-text">
+            <h3 class="card-title"><%= link_to tutorial.title, tutorial %></h3>
+            <h5><%= tutorial.tagline %></h5>
+            <p><%= tutorial.content %></p>
+          </div>
         </div>
       </div>
     </div>
