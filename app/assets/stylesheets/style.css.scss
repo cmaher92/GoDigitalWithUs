@@ -1,0 +1,156 @@
+/* google fonts */
+@import url(https://fonts.googleapis.com/css?family=Merriweather:700|Source+Sans+Pro:400,700,400italic);
+
+/* font variables */
+$merriweather: 'Merriweather', serif;
+$source-sans-pro: 'Source Sans Pro', verdana, arial, helvetica, sans-serif;
+
+/* background color variables */
+$gray-dark: #323a45;
+$gray: #5b616b;
+$gray-light: #aeb0b5;
+$gray-lightest: #f1f1f1;
+$gray-cool-light: #dce4ef;
+
+/* font color variables */
+$base: #212121;
+$primary: #0071bc;
+$primary-darker: #205493;
+$primary-darkest: #112e51;
+$focus: #3e94cf;
+$visited: #4c2c92;
+
+/* secondary color variables */
+$primary-alt: #02bfe7;
+$primary-alt-dark: #00a6d2;
+$primary-alt-darkest: #046b99;
+$secondary-dark: #cd2026;
+
+/* tertiary color variables */
+$green: #2e8540;
+$green-lighter: #94bfa2;
+$cool-blue-lighter: #8ba6ca;
+
+h1 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3em/52px;
+}
+
+h2 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3em/39px;
+}
+
+h3 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3em/26px;
+}
+
+h4 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.3em/20px;
+  #smallest {
+    font-size:10px;
+  }
+  #largest {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-family: $merriweather;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.3em/17px;
+}
+
+h6 {
+  font-family: $source-sans-pro;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.3em/17px;
+  text-transform: uppercase
+}
+
+p, ol, ul, td {
+  font-family: $source-sans-pro;
+}
+
+a {
+  color: $primary;
+  &:visited {
+    color: $visited;
+  }
+  &:hover {
+    color: $focus;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+.content-wrap {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+/* header */
+header {
+  background-color: $primary-darkest;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
+  .logo {
+    margin: 20px;
+  }
+  .search-form {
+    margin: 20px;
+    margin-top: 25px;
+  }
+  .search {
+    font-size: 2rem;
+    height: 4.4rem;
+    width: 11.6rem;
+  }
+}
+
+/* footer */
+footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: $primary-darkest;
+  text-align: center;
+  a {
+    color: $gray-lightest;
+    &:visited {
+      color: $gray-lightest;
+    }
+    &:hover {
+      color: $gray-light;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+

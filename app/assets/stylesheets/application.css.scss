@@ -10,19 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require material
+ *= require_tree .
  *= require_self
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "material";
 @import "codemirror";           // versatile text editor implemented in JS for browser
 @import "summernote";           // super simple WYSIWYG editor
-
-// import stylesheets
-@import "base/colors.scss";
-@import "base/fonts.scss";
-@import "base/mixins.scss";
-@import "scaffolds.scss";
-@import "tutorials.scss";

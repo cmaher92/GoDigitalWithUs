@@ -1,9 +1,21 @@
-<!-- temporary icon: created by ed piel from noun project -->
-<div class="header">
+<header>
   <div class="container">
-    <div id="logo">
-      <%= link_to image_tag("temp_logo.png", alt: "home"), root_path %>
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="logo">
+          <%= link_to root_path do %>
+            <%= image_tag('temp_logo.png') %>
+          <% end %>
+        </div>        
+      </div>
+      <div class="col-sm-9 text-center search-form">
+        <%= form_tag("/search", method: "get", class: "input-group") do %>  
+          <%= text_field_tag :search, params[:q], class: "form-control search", autofocus: true, placeholder: "Search..." %>  
+          <div class="input-group-btn">
+            <%= submit_tag("Search", class: "btn btn-default search") %>
+          </div>
+        <% end %>        
+      </div>
     </div>
   </div>
-</div>
-
+</header>

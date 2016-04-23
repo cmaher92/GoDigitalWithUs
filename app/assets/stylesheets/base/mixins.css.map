@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAKA,2BAA4B,CAC1B,YAAY,CALa,GAAG,CAS9B,iBAAkB,CAChB,YAAY,CAVa,GAAG,CAc9B,kBAAmB,CACjB,YAAY,CAfa,GAAG,CAmB9B,sBAAuB,CACrB,YAAY,CApBa,GAAG",
-"sources": ["mixins.scss"],
-"names": [],
-"file": "mixins.css"
-}
