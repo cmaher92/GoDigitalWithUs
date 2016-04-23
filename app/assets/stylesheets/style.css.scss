@@ -1,18 +1,19 @@
-/* google fonts */
+// Google Fonts
 @import url(https://fonts.googleapis.com/css?family=Merriweather:700|Source+Sans+Pro:400,700,400italic);
 
-/* font variables */
+// Font Variables
 $merriweather: 'Merriweather', serif;
 $source-sans-pro: 'Source Sans Pro', verdana, arial, helvetica, sans-serif;
 
-/* background color variables */
+// Background Color Variables
 $gray-dark: #323a45;
 $gray: #5b616b;
 $gray-light: #aeb0b5;
 $gray-lightest: #f1f1f1;
+$gray-lightest-light: #eeeeee;
 $gray-cool-light: #dce4ef;
 
-/* font color variables */
+// Font Color Variables
 $base: #212121;
 $primary: #0071bc;
 $primary-darker: #205493;
@@ -20,16 +21,21 @@ $primary-darkest: #112e51;
 $focus: #3e94cf;
 $visited: #4c2c92;
 
-/* secondary color variables */
+// Secondary Color Variables
 $primary-alt: #02bfe7;
 $primary-alt-dark: #00a6d2;
 $primary-alt-darkest: #046b99;
 $secondary-dark: #cd2026;
 
-/* tertiary color variables */
+// Tertiary Color Variables
 $green: #2e8540;
 $green-lighter: #94bfa2;
 $cool-blue-lighter: #8ba6ca;
+$cool-blue-lightest: #dce4ef;
+
+body {
+  background-color: $gray-lightest;
+}
 
 h1 {
   font-family: $merriweather;
@@ -102,18 +108,23 @@ div {
 
 .content-wrap {
   margin-top: 100px;
-  margin-bottom: 150px;
+}
+
+.content-top-margin {
+  margin-top: 25px;
 }
 
 /* header */
 header {
   background-color: $primary-darkest;
+  padding: 25px;
   text-align: center;
   position: fixed;
   top: 0px;
   width: 100%;
   height: 100px;
   z-index: 1000;
+  transition: box-shadow .25s;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
   -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
   box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
@@ -150,7 +161,98 @@ footer {
   }
 }
 
+.primary-button {
+  appearance: none;
+  background-color: $primary;
+  border: 0;
+  border-radius: 0.3rem;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  outline: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    background-color: $primary-darker;
+    border-bottom: 0;
+    color: white;
+    text-decoration: none;
+  }
+  &:focus {
+    box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+  }
+  &:active {
+    background-color: $primary-darkest;
+  }
+}
 
+/* cards */
+.card {
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid $gray-lightest-light;
+  transition: box-shadow .25s;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
+  .footer {
+    border-top: 1px solid $gray-light;
+    padding-top: 3px;
+    padding-bottom: 18px;
+    a:hover {
+      color: $focus;
+    }
+  }
+}
 
+.card-hover {
+  &:hover {
+  background-color: $gray-lightest;
+  }
+}
 
+.card-text {
+  overflow: hidden;
+  height: 135px;
+}
 
+.card-bottom-margin {
+  margin-bottom: 10px;
+}
+
+/* main page */
+.main-page {
+  background-color: $primary-darkest;
+  h2 {
+    color: white;
+  }
+  .footer {
+    margin-bottom: 25px;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 600px;
+  background-image: url("background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .main-text {
+    padding-top: 200px;
+    h1 {
+      font-size: 80px;
+    }
+  }
+}

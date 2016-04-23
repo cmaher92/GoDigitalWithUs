@@ -1,32 +1,33 @@
-<div class="container">
-  <div class="col-xs-offset-2 col-xs-8 card">
-    <div class="row">
-      <div class="col-xs-12 page-content">
-        <h1>Create New Tutorial</h1>
+<div class="content-wrap">
+  <div class="container">
+   <div class="col-sm-offset-2 col-sm-8 card content-top-margin">
+      <div class="row">
+        <div class="col-sm-12 card-side-margins">
+          <h1>Create New Tutorial</h1>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-offset-1 col-xs-10">
-        <%= simple_form_for(@tutorial) do |f| %>
-          <div class="form-group">
-            <%= f.input :title, :placeholder => "Title", input_html: { class: "form-control" } %>
-          </div>
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+          <%= simple_form_for(@tutorial) do |f| %>
+            <div class="form-group">
+              <%= f.input :title, placeholder: "Title", input_html: { class: "form-control" } %>
+            </div>
 
-          <div class="form-group">
-            <%= f.input :tagline, :placeholder => "Tagline", input_html: { class: "form-control" } %>
-          </div>
+            <div class="form-group">
+              <%= f.input :tagline, placeholder: "Tagline", input_html: { class: "form-control" } %>
+            </div>
 
-          <div class="form-group">
-            <%= f.input :content, :label => false, input_html: { class: "summernote-plugin" } %>
-          </div>
+            <div class="form-group">
+              <%= f.input :content, label: false, input_html: { class: "summernote-plugin" } %>
+            </div>
 
-          <div class="form-group">
-            <%= f.button :submit, :value => "Publish", :class => "btn btn-raised btn-primary" %>
-          </div>
-        <% end %>
+            <div class="form-group">
+              <%= f.button :submit, value: "Publish", class: "primary-button" %>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
