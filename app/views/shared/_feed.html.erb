@@ -1,7 +1,61 @@
-<ul class="tutorials">
-  <% @tutorials.each do |tutorial| %>
-    <li>
-      <%= link_to tutorial.title, tutorial %>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="row">
+    <h2>Popular Tutorials</h2>
+  </div>
+
+  <div class="row">
+    <% @tutorials[0..2].each do |tutorial| %>
+      <div class="col-md-4 card-bottom-margin">
+        <div class="card card-hover hover">
+          <div class="card-text">
+            <h3 class="card-title"><%= link_to tutorial.title, tutorial %></h3>
+            <h5><%= tutorial.tagline %></h5>
+            <p><%= tutorial.content %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% @tutorials[3..5].each do |tutorial| %>
+      <div class="col-md-4 card-bottom-margin">
+        <div class="card card-hover hover">
+          <div class="card-text">
+            <h3 class="card-title"><%= link_to tutorial.title, tutorial %></h3>
+            <h5><%= tutorial.tagline %></h5>
+            <p><%= tutorial.content %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% @tutorials[6..8].each do |tutorial| %>
+      <div class="col-md-4 card-bottom-margin">
+        <div class="card card-hover hover">
+          <div class="card-text">
+            <h3 class="card-title"><%= link_to tutorial.title, tutorial %></h3>
+            <h5><%= tutorial.tagline %></h5>
+            <p><%= tutorial.content %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="row">
+    <% @tutorials[9..11].each do |tutorial| %>
+      <div class="col-md-4 card-bottom-margin">
+        <div class="card card-hover hover">
+          <div class="card-text">
+            <h3 class="card-title"><%= link_to tutorial.title, tutorial %></h3>
+            <h5><%= tutorial.tagline %></h5>
+            <p><%= tutorial.content %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

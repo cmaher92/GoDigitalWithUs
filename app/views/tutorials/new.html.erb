@@ -1,26 +1,33 @@
-<%= simple_form_for(@tutorial, :defaults => { :input_html => { :class => "form-control" } }) do |f| %>
-  <!-- This row houses the Title & Tagline input fields and the button -->
+<div class="content-wrap">
+  <div class="container">
+   <div class="col-sm-offset-2 col-sm-8 card content-top-margin">
+      <div class="row">
+        <div class="col-sm-12 card-side-margins">
+          <h1>Create New Tutorial</h1>
+        </div>
+      </div>
 
-<div class="form-group row">
-  <div class="col-sm-8">
-    <div class="input-group input-group">
-      <span class="input-group-addon" id="sizing-addon1">Tutorial</span>
-      <%= f.input :title, :label => false, :input_html => { :class => "form-control" } %>
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+          <%= simple_form_for(@tutorial) do |f| %>
+            <div class="form-group">
+              <%= f.input :title, placeholder: "Title", input_html: { class: "form-control" } %>
+            </div>
+
+            <div class="form-group">
+              <%= f.input :tagline, placeholder: "Tagline", input_html: { class: "form-control" } %>
+            </div>
+
+            <div class="form-group">
+              <%= f.input :content, label: false, input_html: { class: "summernote-plugin" } %>
+            </div>
+
+            <div class="form-group">
+              <%= f.button :submit, value: "Publish", class: "primary-button" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-  <br>
-  <div class="input-group input-group">
-    <span class="input-group-addon" id="sizing-addon1">Description</span>
-    <%= f.input :tagline, :label => false, :input_html => { :class => "form-control" } %>
-  </div>
-  </div>
-  <div class="col-sm-4">
-  <%= f.button :submit, :value => "Publish", :class => "btn btn-default" %>
   </div>
 </div>
-
-<div class="container-content">
-<div class="form-group">
-  <%= f.input :content, :label => false, :input_html => { :class => "summernote" } %>
-</div>
-</div>
-  <% end %>

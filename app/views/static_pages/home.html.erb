@@ -1,48 +1,57 @@
-<div id="create-tutorial">
-  <a href="/tutorials/new">Create Tutorial</a>
-  <!-- <%= form_tag("/create", method: "get", :html => {:id => "tutorial-button"}) do %>
-    <%= submit_tag("Create Tutorial")%>
-  <% end %> -->
-</div>
-<div class="clear"></div>
-</div>
+<div class="content-wrap">
+  <div class="main">
+    <div class="main-text text-center">
+      <h1>Learn IT</h1>
+      <h3>A digital literacy tool built in conjunction with the White House to help close the digital divide.</h2>
+    </div>
+  </div>
 
-<div class="container">
-  <div class="row">
-    <div class="flex-row" id="beginner_suite">
-      <div class="individual-levels" id="level-row">
-        <h4 align="center">Level 1</h4>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-        </ul>
+  <div class="main-page">
+    <div class="container">
+      <div class="row content-top-margin">
+        <h2>Let's Get Started...</h2>
       </div>
-      <div class="individual-levels" id="level-row">
-        <h4 align="center">Level 2</h4>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-        </ul>
-      </div>
-      <div class="individual-levels" id="level-row">
-        <h4 align="center">Level 3</h4>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-        </ul>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center footer">
+            <h3>Computer Basics</h3>
+            <ul class="list-unstyled">
+              <li>Link 1</li>
+              <li>Link 2</li>
+              <li>Link 3</li>
+              <li>Link 4</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center footer">
+            <h3>Internet Basics</h3>
+            <ul class="list-unstyled">
+              <li>Link 1</li>
+              <li>Link 2</li>
+              <li>Link 3</li>
+              <li>Link 4</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center footer">
+            <h3>Advanced Internet</h3>
+            <ul class="list-unstyled">
+              <li>Link 1</li>
+              <li>Link 2</li>
+              <li>Link 3</li>
+              <li>Link 4</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="row">
-  <div id="main_content">
-    <h3>Popular Tutorials</h3>
+  <div class="content-top-margin">
     <%= render 'shared/feed' %>
   </div>
 </div>

@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-$('.summernote').summernote
+  $('.summernote').summernote
     height: 400
     lang: 'eng'
     airMode: true
@@ -14,25 +14,77 @@ $('.summernote').summernote
         [
           'style'
           [
-           ]
-           'bold'
-           'italic'
-           'underline'
+            'bold'
+            'italic'
+            'underline'
             'clear'
-           ]
+          ]
         ]
         [
           'para'
-         [
-          'ul'
-         'ol'
-         'paragraph'
-           ]
+          [
+            'ul'
+            'ol'
+            'paragraph'
+          ]
         ]
         [
           'insert'
-            [
+          [
             'hello'
-            ]
+          ]
+        ]
+      ]
+    ]
+   $('.summernote-plugin').summernote
+     height: 280
+     toolbar: [
+       [
+         'style'
+         [
+           'bold'
+           'italic'
+           'underline'
+           'clear'
          ]
        ]
+       [
+         'font'
+         [ 'strikethrough' ]
+       ]
+       [
+         'fontsize'
+         [ 'fontsize' ]
+       ]
+      [
+         'color'
+         [ 'color' ]
+       ]
+       [
+         'para'
+         [
+           'ul'
+           'ol'
+           'paragraph'
+         ]
+       ]
+       [
+         'height'
+         [ 'height' ]
+       ]
+       [
+         'table'
+         [ 'table' ]
+       ]
+       [
+         'chart'
+         [ 'chart' ]
+       ]
+       [
+         'insert'
+         [
+           'hello'
+         ]
+       ]
+      ]
+    

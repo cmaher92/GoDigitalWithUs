@@ -1,14 +1,12 @@
-<div class="header navbar">
-  <div class="container header-container flex-row">
-    <div id="logo">
-      <%= link_to "home", root_path %>
+<header>
+  <div class="container">
+    <div class="row">
+      <%= form_tag("/search", method: "get", class: "input-group") do %>  
+        <%= text_field_tag :search, params[:q], class: "form-control search", autofocus: true, placeholder: "Search..." %>  
+        <div class="input-group-btn">
+          <%= submit_tag("Search", class: "primary-button search") %>
+        </div>
+      <% end %>        
     </div>
-    <div id="search-form">
-      <%= form_tag("/search", method: "get") do %>
-        <%= text_field_tag :search, params[:q], :placeholder => "Search for tutorials here!", :id => "search-text" %>
-        <%= submit_tag("Search", :id => "search-submit") %>
-      <% end %>
-    </div>
-    <div id="flex-right"></div>
   </div>
-</div>
+</header>
