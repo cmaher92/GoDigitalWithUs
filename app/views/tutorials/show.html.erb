@@ -1,37 +1,39 @@
 <div class="content-wrap">
-  <div class="container"> 
+  <div class="container footer-margin"> 
     <div class="col-sm-offset-2 col-sm-8">
       <%= notice %>
     </div>
 
-    <div class="col-sm-offset-2 col-sm-8 card content-top-margin">
-      <div class="row">
-        <div class="col-sm-12">
-          <h2><%= @tutorial.title %></h2>
-          <h3><%= @tutorial.tagline %></h3>
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8 card content-top-margin">
+        <div class="row tutorial-min">
+          <div class="col-sm-12">
+            <h2><%= @tutorial.title %></h2>
+            <h3><%= @tutorial.tagline %></h3>
 
-          <%# rendering raw html b/c that's what the content is %>
-          <%= raw @tutorial.content %>
+            <%# rendering raw html b/c that's what the content is %>
+            <%= raw @tutorial.content %>
 
-          <div class="text-right">
-            <h3><small>
-              <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
-              <%= link_to 'Back', tutorials_path %>
-            </small></h3>
+            <div class="text-right">
+              <h3><small>
+                <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
+                <%= link_to 'Back', tutorials_path %>
+              </small></h3>
+            </div>
           </div>
         </div>
-      </div>
-            
-      <div class="row">
-        <div class="col-sm-12 footer text-center">
-          <h3>Suggested for You</h3>
-          <ul class="list-unstyled">
-            <% @suggestions.each do |suggestion| %>
-              <li>
-                <%= link_to suggestion.title, suggestion %>
-              </li>
-            <% end %>
-          </ul>
+              
+        <div class="row">
+          <div class="col-sm-12 footer text-center">
+            <h3>Suggested for You</h3>
+            <ul class="list-unstyled">
+              <% @suggestions.each do |suggestion| %>
+                <li>
+                  <%= link_to suggestion.title, suggestion %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -8,50 +8,38 @@
 
   <div class="main-page">
     <div class="container">
-      <div class="row content-top-margin">
-        <h2>Let's Get Started...</h2>
-      </div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card text-center footer">
-            <h3>Computer Basics</h3>
-            <ul class="list-unstyled">
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
-            </ul>
+        <div class="col-sm-offset-1 col-sm-3">
+          <div class="row">
+            <h2>Let's Get Started...</h2>
+            <div class="card text-center footer">
+              <h3>Computer Basics</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">How to Use a Mouse</a></li>
+                <li><a href="#">What Is a Computer?</a></li>
+                <li><a href="#">How to Use the Keyboard</a></li>
+                <li><a href="#">Printing a Document</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card text-center footer">
+              <h3>Internet Basics</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">What is the Internet?</a></li>
+                <li><a href="#">Different Browsers to Use</a></li>
+                <li><a href="#">How to Create an Email Account</a></li>
+                <li><a href="#">How to Store Documents Online</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="card text-center footer">
-            <h3>Internet Basics</h3>
-            <ul class="list-unstyled">
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card text-center footer">
-            <h3>Advanced Internet</h3>
-            <ul class="list-unstyled">
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
-            </ul>
+        <div class="col-sm-offset-1 col-sm-6">
+          <div class="content-top-margin footer remove-footer-margin">
+            <%= render 'shared/feed' %>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="content-top-margin">
-    <%= render 'shared/feed' %>
   </div>
 </div>
