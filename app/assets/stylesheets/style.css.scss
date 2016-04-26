@@ -132,12 +132,38 @@ header {
   }
 }
 
+/* sticky-footer hackery */
+
+html, body {
+  height: 93%;
+}
+
+.outside-footer {
+  min-height: 100%;
+  margin-bottom: -90px;
+}
+
+.outside-footer:after {
+  content: "";
+  display: block;
+}
+
+.outside-footer:after {
+  height: 90px;
+}
+
+footer:after {
+  margin-bottom: 0;
+}
+
 /* footer */
+
 footer {
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: $primary-darkest;
   text-align: center;
+  height: 125px;
   a {
     color: $gray-lightest;
     &:visited {
@@ -216,7 +242,7 @@ footer {
 }
 
 .card-bottom-margin {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .footer-margin {
@@ -231,6 +257,19 @@ footer {
   box-shadow: 0px -3px 21px 3px rgba(174,176,181,1);
   .footer {
     margin-bottom: 25px;
+  }
+
+  .right-col {
+    h3 {
+      padding-top: 15px;
+      border-bottom: 1px solid $gray-light;
+      padding-bottom: 5px;
+    }
+  }
+
+  #popular-title {
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: 5px;
   }
 }
 
@@ -264,8 +303,3 @@ footer {
 .tutorial-min {
   min-height: 300px;
 }
-
-
-
-
-
