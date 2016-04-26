@@ -1,4 +1,4 @@
-<%= form_for(@tutorial) do |f| %>
+<%= simple_form_for(@tutorial) do |f| %>
   <% if @tutorial.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@tutorial.errors.count, "error") %> prohibited this tutorial from being saved:</h2>
@@ -11,19 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.input :title, placeholder: "Title", input_html: { class: "form-control" } %>
   </div>
-  <div class="field">
-    <%= f.label :tagline %><br>
-    <%= f.text_field :tagline %>
+
+  <div class="form-group">
+    <%= f.input :tagline, placeholder: "Tagline", input_html: { class: "form-control" } %>
   </div>
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
+
+  <div class="form-group">
+    <%= f.input :content, label: false, input_html: { class: "summernote-plugin" } %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.button :submit, value: "Update Tutorial", class: "primary-button" %>
   </div>
 <% end %>

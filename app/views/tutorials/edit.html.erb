@@ -1,6 +1,24 @@
-<h1>Editing Tutorial</h1>
+<div class="content-wrap">
+  <div class="container">
+   <div class="col-sm-offset-2 col-sm-8 card content-top-margin">
+      <div class="row">
+        <div class="col-sm-12 card-side-margins">
+          <h1>Editing Tutorial</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+          <h3 class="small pull-right">
+            <%= link_to 'Back', @tutorial %> | <%= link_to 'All Tutorials', tutorials_path %>
+          </h3>
+        </div>
+      </div>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @tutorial %> |
-<%= link_to 'Back', tutorials_path %>
+      <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+          <%= render 'form' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
