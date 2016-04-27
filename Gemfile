@@ -33,8 +33,8 @@ gem 'jquery-turbolinks'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem 'rails_12factor', '0.0.2'
   gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
   gem 'puma',           '2.11.1'
 end
 
@@ -49,4 +49,4 @@ group :development do
   gem 'spring'
 end
 
-ruby '2.2.4'
+ruby '2.3.0'
