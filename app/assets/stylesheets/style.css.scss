@@ -217,9 +217,9 @@ footer {
   border-radius: 10px;
   border: 1px solid $gray-lightest-light;
   transition: box-shadow .25s;
-  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
-  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
-  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.62);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(174,176,181,1);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(174,176,181,1);
+  box-shadow: 0px 2px 2px 0px rgba(174,176,181,1);
   .footer {
     border-top: 1px solid $gray-light;
     padding-top: 3px;
@@ -232,7 +232,7 @@ footer {
 
 .card-hover {
   &:hover {
-  background-color: $gray-lightest;
+  background-color: $cool-blue-lighter;
   }
 }
 
@@ -252,9 +252,6 @@ footer {
 /* main page */
 .main-page {
   background-color: $gray-lightest;
-  -webkit-box-shadow: 0px -3px 21px 3px rgba(174,176,181,1);
-  -moz-box-shadow: 0px -3px 21px 3px rgba(174,176,181,1);
-  box-shadow: 0px -3px 21px 3px rgba(174,176,181,1);
   .footer {
     margin-bottom: 25px;
   }
@@ -282,7 +279,7 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   .main-text {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, .8);
     top: 100px;
     left: 0;
     width: 100%;
@@ -291,6 +288,10 @@ footer {
     padding-top: 100px;
     h1 {
       font-size: 80px;
+      color: black;
+    }
+    h3 {
+      color: black;
     }
   }
 }
