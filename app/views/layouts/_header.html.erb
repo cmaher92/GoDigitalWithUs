@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <%= form_tag("/search", method: "get", class: "input-group") do %>  
-        <%= text_field_tag :search, params[:q], class: "form-control search", autofocus: true, placeholder: "Search..." %>  
+        <%= text_field_tag :search, params[:q], class: "form-control search", autofocus: true, placeholder: "What are you looking for..." %>  
         <div class="input-group-btn">
           <%= submit_tag("Search", class: "primary-button search") %>
         </div>
