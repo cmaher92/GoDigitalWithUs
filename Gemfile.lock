@@ -90,6 +90,9 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    pg (0.17.1)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -112,7 +115,7 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_12factor (0.0.3)
+    rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.5)
@@ -178,8 +181,10 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   material-design-rails
+  pg (= 0.17.1)
+  puma (= 2.11.1)
   rails (= 4.2.5.1)
-  rails_12factor
+  rails_12factor (= 0.0.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form
