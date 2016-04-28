@@ -7,14 +7,14 @@
         </a>
       </div>
       <div class="col-md-8 col-sm-8">
-        <%= form_tag("/search", method: "get", class: "input-group") do %>  
-          <%= text_field_tag :search, params[:q], class: "form-control search", autofocus: true, placeholder: "What are you looking for..." %>  
+        <%= form_tag("/search", method: "get", class: "input-group") do %>
+          <%= text_field_tag :search, params[:q], class: "form-control search", autofocus: true, placeholder: "What are you looking for..." %>
           <div class="input-group-btn">
             <%= button_tag(type: "submit", class: "search primary-button") do %>
               <i class="glyphicon glyphicon-search"></i> <span class="search-shim hidden-xs">Search</span>
             <% end %>
           </div>
-        <% end %>        
+        <% end %>
       </div>
     </div>
   </div>
