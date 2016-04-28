@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.5.1'
-gem 'sqlite3'
 gem 'faker',                  '1.4.2'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -33,8 +32,15 @@ gem 'jquery-turbolinks'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+  gem 'puma',           '2.11.1'
+end
+
 group :development, :test do
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -42,3 +48,5 @@ group :development do
 
   gem 'spring'
 end
+
+ruby '2.3.0'
