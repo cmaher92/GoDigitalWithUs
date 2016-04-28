@@ -138,6 +138,13 @@ header {
   }
 }
 
+a.brand {
+  color: white;
+  font-size: 30px;
+  font-family: $merriweather;
+  text-decoration: none;
+}
+
 /* sticky-footer hackery */
 
 html, body {
