@@ -2,13 +2,15 @@
 <div class="row">
   <% @tutorials.each do |tutorial| %>
     <div class="col-md-12 card-bottom-margin">
-      <div class="card card-hover hover">
-        <div class="card-text">
-          <h3 class="card-title"><%= link_to tutorial.title, tutorial %></h3>
-          <h5><%= tutorial.tagline %></h5>
-          <p><%= raw tutorial.content %></p>
+      <%= link_to tutorial, :class => "remove-text-decoration" do %>
+        <div class="card card-hover hover">
+          <div class="card-text">
+            <h3 class="card-title"><%= tutorial.title %></h3>
+            <h5><%= tutorial.tagline %></h5>
+            <p><%= raw tutorial.content %></p>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
   <% end %>
 </div>
