@@ -80,11 +80,10 @@ $ ->
          'chart'
          [ 'chart' ]
        ]
+
        [
-         'insert'
-         [
-           'hello'
-         ]
+         'link'
+         ['linkDialogShow', 'unlink']
        ]
       ]
     
