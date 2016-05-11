@@ -1,6 +1,6 @@
 <div class="content-wrap">
   <div class="container footer-margin">
-   <div class="col-sm-offset-2 col-sm-8 card content-top-margin">
+   <div class="col-sm-offset-1 col-sm-10 card content-top-margin">
       <div class="row">
         <div class="col-sm-12 card-side-margins">
           <h1>Create New Tutorial</h1>
@@ -8,7 +8,7 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-offset-1 col-sm-10">
+        <div class="col-sm-12">
           <%= simple_form_for(@tutorial) do |f| %>
             <div class="form-group">
               <%= f.input :title, placeholder: "Title", input_html: { class: "form-control" } %>

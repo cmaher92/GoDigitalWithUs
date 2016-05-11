@@ -37,7 +37,7 @@ $ ->
       ]
     ]
    $('.summernote-plugin').summernote
-     height: 280
+     height: 600
      toolbar: [
        [
          'style'
