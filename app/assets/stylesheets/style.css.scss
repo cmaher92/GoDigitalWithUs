@@ -286,9 +286,10 @@ footer {
 
 /* cards */
 .card {
+  color: $base;
   background-color: white;
   padding: 15px 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid $gray-lightest-light;
   transition: box-shadow .25s;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(174,176,181,1);
@@ -306,13 +307,18 @@ footer {
 
 .card-hover {
   &:hover {
-  background-color: $cool-blue-lightest;
+    background-color: $cool-blue-lightest;
   }
 }
 
 .card-text {
   overflow: hidden;
   max-height: 135px;
+}
+
+a.remove-text-decoration,
+a.remove-text-decoration:hover {
+  text-decoration: none;
 }
 
 .card-bottom-margin {
