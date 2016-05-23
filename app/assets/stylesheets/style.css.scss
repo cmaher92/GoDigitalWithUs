@@ -310,9 +310,19 @@ footer {
   }
 }
 
+.card-title {
+  color: $primary;
+}
+
 .card-text {
   overflow: hidden;
   max-height: 135px;
+}
+
+.tagline {
+  color: $gray-dark;
+  font-style: italic;
+  font-weight: 400;
 }
 
 a.remove-text-decoration,
