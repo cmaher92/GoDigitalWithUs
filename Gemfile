@@ -49,4 +49,4 @@ group :development do
   gem 'spring'
 end
 
-ruby '2.3.0'
+ruby '2.3.1'
