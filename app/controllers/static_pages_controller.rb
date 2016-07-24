@@ -8,6 +8,12 @@ class StaticPagesController < ApplicationController
     end
   end
 
+  def guide
+  end
+
   def contact
+  end
+
+  def about
   end
 end

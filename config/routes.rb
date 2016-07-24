@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
   get 'guide' => 'static_pages#guide'
+  get 'contact' => 'static_pages#contact'
+  get 'about' => 'static_pages#about'
 
   resources :tutorials
   # The priority is based upon order of creation: first created -> highest priority.
