@@ -1,12 +1,12 @@
 
-# Created by https://www.gitignore.io/api/rails
+# Created by https://www.gitignore.io/api/rails,osx
 
 ### Rails ###
 *.rbc
 capybara-*.html
 .rspec
 /log
-/tmp/*
+/tmp
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /public/system
@@ -19,6 +19,10 @@ pickle-email-*.html
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
 config/secrets.yml
+
+# dotenv
+# TODO Comment out this rule if environment variables can be committed
+.env
 
 ## Environment normalization:
 /.bundle
@@ -40,3 +44,31 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
