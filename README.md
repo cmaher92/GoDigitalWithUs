@@ -34,59 +34,55 @@ There are several ways to contribute to the project!
 ### Getting started
 
 1. Clone the project
-```
-git clone https://github.com/cmaher92/ConnectAll.git
-```
-2. Install Ruby: If you already have Ruby and need to update to 2.3.1, skip to step 3.
+  ```
+  git clone https://github.com/cmaher92/ConnectAll.git
+  ```
+1. Install Ruby: If you already have Ruby and need to update to 2.3.1, skip to step 3.
+  * Install Hombrew: If you have Homebrew, skip to next step.
+    ```
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+  * Update Homebrew
+    ```
+    brew update
+    ```
+  * Install Ruby
+    ```
+    brew install ruby
+    ```
 
-    - Install Hombrew: If you have Homebrew, skip to next step.
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-    - Update Homebrew
-```
-    - brew update
-```
-    - Install Ruby
-```
-brew install ruby
-```
+1. Update Ruby
+  * Update Homebrew
+    ```
+    brew update
+    ```
+  * Update `ruby-build`
+    ```
+    brew upgrade ruby-build
+    ```
+  * Install 2.3.1
+    ```
+    rbenv install 2.3.1
+    ```
 
-3. Update Ruby
+1. Install bundler
+  ```
+  gem install bundler
+  ```
 
-    - Update Homebrew
-```
-brew update
-```
-    - Update `ruby-build`
-```
-brew upgrade ruby-build
-```
-    - Install 2.3.1
-```
-rbenv install 2.3.1
-```
-
-4. Install bundler
-```
-gem install bundler
-```
-
-5. Install gems
-```
-bundle install
-```
-6. Run migrations
-```
-bin/rake db:migrate RAILS_ENV=development
-```
-
-7. Run the server
-```
-rails s
-```
-
-8. Go to localhost:3000
-```
-http://localhost:3000/
-```
+1. Install gems
+  ```
+  bundle install
+  ```
+1. Run migrations
+  ```
+  bin/rake db:migrate RAILS_ENV=development
+  ```
+1. Run the server
+  ```
+  rails s
+  ```
+1. Go to localhost:3000
+  ```
+  http://localhost:3000/
+  ```
