@@ -1,12 +1,12 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-4">
+      <div class="col-md-3 col-sm-5">
         <a class="brand" href='/'>
           GoDigitalWith.US
         </a>
       </div>
-      <div class="col-md-8 col-sm-8">
+      <div class="col-md-9 col-sm-7">
         <%= form_tag(root_path, :method => "get", id: "search-form", class: "input-group") do %>
         <%= text_field_tag :search, params[:search], class: "form-control search", autofocus: true, placeholder: "Search Tutorials" %>
         <div class="input-group-btn">
@@ -18,4 +18,17 @@
       </div>
     </div>
   </div>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign in</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>

@@ -112,8 +112,8 @@ div {
 
 /* header */
 header {
-  background-color: $primary-darkest;
-  padding: 25px 0;
+  background-color: $gray-lightest;
+  padding: 25px 0 0 0;
   text-align: center;
   position: fixed;
   top: 0px;
@@ -142,10 +142,40 @@ header {
 }
 
 a.brand {
-  color: white;
+  color: $primary-darkest;
   font-size: 30px;
   font-family: $merriweather;
   text-decoration: none;
+}
+
+/* nav bar */
+
+nav {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
+nav.navbar {
+  ul.navbar-nav {
+    color: white;
+    a {
+      color: $gray-lightest;
+      &:visited {
+        color: $gray-lightest;
+      }
+      &:hover {
+        color: $gray-light;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.navbar-default {
+  background-color: $primary-darkest;
+  border: 0;
+  margin-bottom: 0px;
+  margin-top: 15px;
 }
 
 /* sticky-footer hackery */
@@ -201,7 +231,7 @@ footer {
   display: inline-block;
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1.7rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1;
   margin-bottom: 0.5em;
   margin-right: 0.5em;
@@ -210,7 +240,8 @@ footer {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  -webkit-font-smoothing: antialiased;
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
   &:hover {
     background-color: $primary-darker;
     border-bottom: 0;
