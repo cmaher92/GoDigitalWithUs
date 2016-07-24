@@ -11,11 +11,11 @@
         <div class="col-sm-12">
           <%= simple_form_for(@tutorial) do |f| %>
             <div class="form-group">
-              <%= f.input :title, placeholder: "Title", input_html: { class: "form-control" } %>
+              <%= f.input :title, placeholder: "Write a descriptive title that begins with 'How to . . .'", input_html: { class: "form-control" } %>
             </div>
 
             <div class="form-group">
-              <%= f.input :tagline, placeholder: "Tagline", input_html: { class: "form-control" } %>
+              <%= f.input :tagline, label: "Description", placeholder: "Include a brief description of what this tutorial will cover", as: "text", input_html: { class: "form-control" } %>
             </div>
 
             <div class="form-group">
