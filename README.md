@@ -32,7 +32,6 @@ There are several ways to contribute to the project!
 * **Get involved**: If you'd like to get more involved, please feel free to contact us at `godigitalwithus@gmail.com`.
 
 ### Getting started
-
 1. Clone the project
 
   ```
@@ -77,7 +76,6 @@ There are several ways to contribute to the project!
   ```
   gem install bundler
   ```
-
 1. Install gems
 
   ```
