@@ -9,9 +9,9 @@
 ---
 
 ### Table of Contents
-* [What is Go Digital with Us?](#What-is-Go-Digital-with-Us?)
-* [How to contribute](#How-to-contribute)
-* [Getting started](#Getting-started)
+* [What is Go Digital with Us?](#what-is-go-digital-with-us?)
+* [How to contribute](#how-to-contribute)
+* [Getting started](#getting-started)
 
 ---
 
