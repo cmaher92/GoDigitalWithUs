@@ -34,59 +34,67 @@ There are several ways to contribute to the project!
 ### Getting started
 
 1. Clone the project
-```
-git clone https://github.com/cmaher92/ConnectAll.git
-```
-2. Install Ruby: If you already have Ruby and need to update to 2.3.1, skip to step 3.
 
-    - Install Hombrew: If you have Homebrew, skip to next step.
-```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-    - Update Homebrew
-```
-    - brew update
-```
-    - Install Ruby
-```
-brew install ruby
-```
+  ```
+  git clone https://github.com/cmaher92/ConnectAll.git
+  ```
+1. Install Ruby: If you already have Ruby and need to update to 2.3.1, skip to step 3.
+  * Install Hombrew: If you have Homebrew, skip to next step.
 
-3. Update Ruby
+    ```
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+  * Update Homebrew
 
-    - Update Homebrew
-```
-brew update
-```
-    - Update `ruby-build`
-```
-brew upgrade ruby-build
-```
-    - Install 2.3.1
-```
-rbenv install 2.3.1
-```
+    ```
+    brew update
+    ```
+  * Install Ruby
 
-4. Install bundler
-```
-gem install bundler
-```
+    ```
+    brew install ruby
+    ```
 
-5. Install gems
-```
-bundle install
-```
-6. Run migrations
-```
-bin/rake db:migrate RAILS_ENV=development
-```
+1. Update Ruby
+  * Update Homebrew
 
-7. Run the server
-```
-rails s
-```
+    ```
+    brew update
+    ```
+  * Update `ruby-build`
 
-8. Go to localhost:3000
-```
-http://localhost:3000/
-```
+    ```
+    brew upgrade ruby-build
+    ```
+  * Install 2.3.1
+
+    ```
+    rbenv install 2.3.1
+    ```
+
+1. Install bundler
+
+  ```
+  gem install bundler
+  ```
+
+1. Install gems
+
+  ```
+  bundle install
+  ```
+1. Run migrations
+
+  ```
+  bin/rake db:migrate RAILS_ENV=development
+  ```
+1. Run the server
+
+  ```
+  rails s
+  ```
+1. Go to localhost:3000
+
+  ```
+  http://localhost:3000/
+  ```
