@@ -1,6 +1,9 @@
 class Tutorial < ActiveRecord::Base
   def self.search(search)
-    where("name LIKE ?", "%#{search}%") 
-    where("content LIKE ?", "%#{search}%")
+    if search
+      where("title LIKE ? OR tagline LIKE ? OR content LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
+    else 
+      find(:all)
+    end
   end
 end
