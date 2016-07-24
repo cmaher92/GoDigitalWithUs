@@ -33,59 +33,60 @@ There are several ways to contribute to the project!
 
 ### Getting started
 
-##### **Clone the project**
+1. Clone the project
 ```
 git clone https://github.com/cmaher92/ConnectAll.git
 ```
-##### Install Ruby: If you already have Ruby and need to update to 2.3.1, skip to the next section.
+2. Install Ruby: If you already have Ruby and need to update to 2.3.1, skip to step 3.
 
-1. Install Hombrew: If you have Homebrew, skip to step 2.
+    - Install Hombrew: If you have Homebrew, skip to next step.
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-2. Update Homebrew
+    - Update Homebrew
 ```
-brew update
+    - brew update
 ```
-3. Install Ruby
+    - Install Ruby
 ```
 brew install ruby
 ```
 
-##### **Update Ruby**
+3. Update Ruby
 
-1. **Update Homebrew**
+    - Update Homebrew
 ```
 brew update
 ```
-2. **Update `ruby-build`**
+    - Update `ruby-build`
 ```
 brew upgrade ruby-build
 ```
-3. **Install 2.3.1**
+    - Install 2.3.1
 ```
 rbenv install 2.3.1
 ```
-##### Install bundler
+
+4. Install bundler
 ```
 gem install bundler
 ```
 
-##### Install gems
+5. Install gems
 ```
 bundle install
 ```
-##### Run migrations
+6. Run migrations
 ```
 bin/rake db:migrate RAILS_ENV=development
 ```
 
-##### Run the server
+7. Run the server
 ```
 rails s
 ```
 
-##### Go to localhost:3000
+8. Go to localhost:3000
 ```
 http://localhost:3000/
 ```
