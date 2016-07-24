@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.3.1'
 gem 'rails', '4.2.5.1'
 gem 'faker',                  '1.4.2'
 gem 'sass-rails', '~> 5.0'
@@ -40,8 +40,9 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'sqlite3'
 end
+
+gem 'sqlite3'
 
 group :development do
   gem 'web-console', '~> 2.0'
