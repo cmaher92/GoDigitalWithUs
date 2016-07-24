@@ -12,6 +12,7 @@
 1. [What is Go Digital with Us?](What-is-Go-Digital-with-Us?)
 2. [How to contribute](How-to-contribute)
 3. [Getting started](Getting-started)
+
 ---
 
 ### What is Go Digital with Us?
