@@ -8,12 +8,12 @@
       </div>
       <div class="col-md-8 col-sm-8">
         <%= form_tag(root_path, :method => "get", id: "search-form", class: "input-group") do %>
-        <%= text_field_tag :search, params[:search], class: "form-control search", autofocus: true, placeholder: "Search Tutorials" %>
-        <div class="input-group-btn">
-          <%= button_tag(type: "submit", class: "search primary-button") do %>
-            <i class="glyphicon glyphicon-search"></i> <span class="search-shim hidden-xs">Search</span>
-          <% end %>
-        </div>
+          <%= text_field_tag :search, params[:search], class: "form-control search", autofocus: true, placeholder: "Search Tutorials" %>
+          <div class="input-group-btn">
+            <%= button_tag(type: "submit", class: "search primary-button") do %>
+              <i class="glyphicon glyphicon-search"></i> <span class="search-shim hidden-xs">Search</span>
+            <% end %>
+          </div>
         <% end %>
       </div>
     </div>

@@ -28,7 +28,6 @@ class TutorialsController < ApplicationController
   def create
     @tutorial = Tutorial.new(tutorial_params)
 
-
     respond_to do |format|
       if @tutorial.save
         format.html { redirect_to @tutorial, notice: 'Tutorial was successfully created.' }

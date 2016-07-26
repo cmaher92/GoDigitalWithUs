@@ -9,11 +9,16 @@ class Tutorial < ActiveRecord::Base
     "Government & Licenses"
   ]
 
-  def self.search(search)
-    if search
-      where("title LIKE ? OR tagline LIKE ? OR content LIKE ?", "%#{search}%", "%#{search}%", "%#{search}%")
-    else 
-      find(:all)
+  class << self
+
+    def search(search_params)
+      if search_params
+        where("title LIKE ? OR tagline LIKE ? OR content LIKE ?", "%#{search_params}%", "%#{search_params}%", "%#{search_params}%")
+      else 
+        find(:all)
+      end
     end
+
   end
+
 end

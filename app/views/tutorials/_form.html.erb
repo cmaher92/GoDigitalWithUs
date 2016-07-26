@@ -1,12 +1,12 @@
 <%= simple_form_for(@tutorial) do |f| %>
+
   <% if @tutorial.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@tutorial.errors.count, "error") %> prohibited this tutorial from being saved:</h2>
-
       <ul>
-      <% @tutorial.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% @tutorial.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
@@ -23,6 +23,6 @@
     <%= f.input :content, label: false, input_html: { class: "summernote-plugin" } %>
   </div>
   <div class="actions">
-    <%= f.button :submit, value: "Submit Changes for Review", class: "primary-button" %>
+    <%= f.submit, value: "Submit Changes for Review", class: "primary-button" %>
   </div>
 <% end %>
