@@ -11,7 +11,7 @@
 ### Table of Contents
 * [What is Go Digital with Us?](#what-is-go-digital-with-us?)
 * [How to contribute](#how-to-contribute)
-* [Getting started](#getting-started)
+* [Getting started](#getting-started-in-osx)
 
 ---
 
