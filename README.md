@@ -25,9 +25,9 @@ There are several ways to contribute to the project!
 
 * **Contribute content**: In order to be successful, we need all of you to provide content to help those understand how to connect using the Internet. Things that seem basic and intuitive to those that have grown up with technology can seem daunting to many who have never used it. Spend 30 minutes creating a tutorial and submit it for review! It can be something a simple as creating an email account with yur favorite email service!
 
-* **Create issues**: Found a bug? Have a suggestions? Please open an [issue](https://github.com/cmaher92/ConnectAll/issues) so we can take a look!
+* **Create issues**: Found a bug? Have a suggestion? Please open an [issue](https://github.com/cmaher92/ConnectAll/issues) so we can take a look!
 
-* **Contribute to our code**: Found a fix for a bug? Want to add a feature? Please take a look at our contributing guidelines and create a [pull request](https://github.com/cmaher92/ConnectAll/pulls) and we'll take a look!
+* **Contribute to our code**: Found a fix for a bug? Want to add a feature? Create a [pull request](https://github.com/cmaher92/ConnectAll/pulls) and we'll take a look!
 
 * **Get involved**: If you'd like to get more involved, please feel free to contact us at `godigitalwithus@gmail.com`.
 
