@@ -31,66 +31,76 @@ There are several ways to contribute to the project!
 
 * **Get involved**: If you'd like to get more involved, please feel free to contact us at `godigitalwithus@gmail.com`.
 
-### Getting started
+### Getting started in OSX
 1. Clone the project
 
   ```
   git clone https://github.com/cmaher92/ConnectAll.git
   ```
-1. Install Ruby: If you already have Ruby and need to update to 2.3.1, skip to step 3.
+
+1. Install rbenv: If you already have Ruby and need to update to 2.3.1, skip to step 3.
   * Install Hombrew: If you have Homebrew, skip to next step.
 
     ```
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
+
   * Update Homebrew
 
     ```
     brew update
     ```
-  * Install Ruby
+
+  * Install rbenv
 
     ```
-    brew install ruby
+    brew install rbenv
     ```
 
-1. Update Ruby
-  * Update Homebrew
-
-    ```
-    brew update
-    ```
+1. Install Ruby
   * Update `ruby-build`
 
     ```
-    brew upgrade ruby-build
+    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
     ```
-  * Install 2.3.1
+
+  * Install Ruby 2.3.1
 
     ```
     rbenv install 2.3.1
+    ```
+
+  * Set global Ruby version to 2.3.1
+
+    ```
+    rbenv global 2.3.1
     ```
 
 1. Install bundler
 
   ```
   gem install bundler
+  rbenv rehash
   ```
+
 1. Install gems
 
   ```
   bundle install
   ```
-1. Run migrations
+
+1. Set up your local database
 
   ```
-  bin/rake db:migrate RAILS_ENV=development
+  bundle exec rake db:setup
   ```
+
 1. Run the server
 
   ```
-  rails s
+  bundle exec rails s
   ```
+
 1. Go to localhost:3000
 
   ```
