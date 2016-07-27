@@ -1,18 +1,33 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-1">
+      <div class="col-sm-4">
         <h4>Navigation</h4>
         <%= link_to "Home",                     root_path %>
         <br>
         <%= link_to "Tutorial Creation Guide",  "/guide" %>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-4">
+        <h4>Contributors</h4>
+        <% if user_signed_in? %>
+          <div class="flex-column">
+          <%= link_to 'Dashboard', dashboard_path, :class => '' %>
+          <%= link_to 'Edit profile', edit_user_registration_path, :class => '' %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => ''  %>
+          </div>
+        <% else %>
+          <div class="flex-row">
+          <%= link_to "Sign up", new_user_registration_path, :class => 'btn btn-danger'  %>
+          <%= link_to "Login", new_user_session_path, :class => 'btn btn-danger'  %>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-sm-4">
         <h4>How to Help</h4>
-        <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-danger" %>
+        <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-block btn-danger" %>
+      </div>
       </div>
     </div>
-    <br>
     <div class="row"></div>
       <div class="col-sm-12 text-center">
         <br>

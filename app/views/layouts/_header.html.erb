@@ -6,7 +6,7 @@
           GoDigitalWith.US
         </a>
       </div>
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-9 col-sm-8">
         <%= form_tag(root_path, :method => "get", id: "search-form", class: "input-group") do %>
         <%= text_field_tag :search, params[:search], class: "form-control search", autofocus: true, placeholder: "Search Tutorials" %>
         <div class="input-group-btn">
@@ -14,17 +14,6 @@
             <i class="glyphicon glyphicon-search"></i> <span class="search-shim hidden-xs">Search</span>
           <% end %>
         </div>
-        <% end %>
-      </div>
-      <div class="col-md-3 col-sm-2">        
-        <p class="navbar-text pull-right">
-        <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-        <% else %>
-          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
         <% end %>
       </div>
     </div>

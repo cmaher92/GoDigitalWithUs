@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'static_pages#home'
   get 'guide' => 'static_pages#guide'
+  get 'dashboard' => 'users#show'
 
   resources :tutorials
   # The priority is based upon order of creation: first created -> highest priority.

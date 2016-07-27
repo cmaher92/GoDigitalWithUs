@@ -26,8 +26,7 @@ class TutorialsController < ApplicationController
   # POST /tutorials
   # POST /tutorials.json
   def create
-    @tutorial = Tutorial.new(tutorial_params)
-
+    @tutorial = current_user.tutorials.build(tutorial_params)
 
     respond_to do |format|
       if @tutorial.save
