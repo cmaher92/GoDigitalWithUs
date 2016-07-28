@@ -10,10 +10,16 @@
   </head>
 
   <body>
-    <div class="outside-footer">
-      <%= render 'layouts/header' %>
-      <%= yield %>
-    </div>
-    <%= render 'layouts/footer' %>
+  <%= render 'layouts/header' %>
+
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <%= yield %>
+
+  <%= render 'layouts/footer' %>
   </body>
 </html>
