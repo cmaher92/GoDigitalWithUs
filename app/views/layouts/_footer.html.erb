@@ -11,20 +11,20 @@
         <h4>Contributors</h4>
         <% if user_signed_in? %>
           <div class="flex-column">
-          <%= link_to 'Dashboard', dashboard_path, :class => '' %>
-          <%= link_to 'Edit profile', edit_user_registration_path, :class => '' %>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => ''  %>
+          <%= link_to 'Dashboard', dashboard_path %>
+          <%= link_to 'Edit profile', edit_user_registration_path %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
           </div>
         <% else %>
-          <div class="flex-row">
-          <%= link_to "Sign up", new_user_registration_path, :class => 'btn btn-danger'  %>
-          <%= link_to "Login", new_user_session_path, :class => 'btn btn-danger'  %>
+          <div class="flex-column">
+          <%= link_to "Sign up", new_user_registration_path %>
+          <%= link_to "Login", new_user_session_path %>
           </div>
         <% end %>
       </div>
       <div class="col-sm-4">
         <h4>How to Help</h4>
-        <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-block btn-danger" %>
+        <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-danger" %>
       </div>
       </div>
     </div>

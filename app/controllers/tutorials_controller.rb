@@ -1,5 +1,6 @@
 class TutorialsController < ApplicationController
   before_action :set_tutorial, only: [:show, :edit, :update, :destroy]
+  before_action :require_login, only: [:new, :update, :destroy]
 
   # GET /tutorials
   # GET /tutorials.json
@@ -72,5 +73,12 @@ class TutorialsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def tutorial_params
       params.require(:tutorial).permit(:title, :tagline, :content)
+    end
+
+    def require_login
+      unless user_signed_in?
+        flash[:error] = "You must be logged in to access this section"
+        redirect_to new_user_registration_url # halts request cycle
+      end
     end
 end
