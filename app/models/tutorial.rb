@@ -1,6 +1,8 @@
 class Tutorial < ActiveRecord::Base
   belongs_to :user
+  has_many :steps
   validates :user_id, presence: true
+  accepts_nested_attributes_for :steps
 
   TOPICS = [
     "Internet Basics",

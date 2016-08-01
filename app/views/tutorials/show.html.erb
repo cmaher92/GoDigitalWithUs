@@ -1,5 +1,5 @@
 <div class="content-wrap">
-  <div class="container footer-margin"> 
+  <div class="container footer-margin">
     <div class="col-sm-offset-2 col-sm-8">
       <%= notice %>
     </div>
@@ -12,7 +12,7 @@
             <h3><%= @tutorial.tagline %></h3>
 
             <%# rendering raw html b/c that's what the content is %>
-            <%= raw @tutorial.content %>
+            <%= raw @tutorial.steps %>
 
             <div class="text-right">
               <h3><small>
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-              
+
         <div class="row">
           <div class="col-sm-12 footer text-center">
             <h3>Suggested for You</h3>

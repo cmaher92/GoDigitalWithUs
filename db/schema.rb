@@ -11,12 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160729183709) do
+ActiveRecord::Schema.define(version: 20160801184357) do
+
+  create_table "steps", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text     "content"
+  end
 
   create_table "tutorials", force: :cascade do |t|
     t.string   "title"
     t.string   "tagline"
-    t.text     "content"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
