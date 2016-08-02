@@ -12,7 +12,9 @@
             <h3><%= @tutorial.tagline %></h3>
 
             <%# rendering raw html b/c that's what the content is %>
-            <%= raw @tutorial.steps %>
+            <% @tutorial.steps.each do |tutorial| %>
+                <%= tutorial.content %>
+            <% end %>
 
             <div class="text-right">
               <h3><small>
