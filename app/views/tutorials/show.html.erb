@@ -9,9 +9,7 @@
       <div class="tutorial-nav content-top-margin">
         <h3>Tutorial Steps</h3>
         <% @tutorial.steps.each do |step| %>
-          <li>
-            <%= link_to "#{step.content}", "##{step.id}" %>
-          </li>
+          <%= link_to "#{step.content}", "##{step.id}" %> <br />
         <% end %>
       </div>
       <div class="card content-top-margin">
