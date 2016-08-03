@@ -406,3 +406,36 @@ a.remove-text-decoration:hover {
 .margin-bottom {
   margin-bottom: 50px;
 }
+
+.page-wrap {
+  width: 600px;
+  margin: 15px auto;
+  position: relative;
+}
+
+.sidebar {
+  height: 100px;
+  width: 190px;
+  position: relative;
+  // margin-left: 410px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tutorials-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.card {
+  width: 66%;
+}
+
+.tutorial-nav {
+  width: 33%;
+}
