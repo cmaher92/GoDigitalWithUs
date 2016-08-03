@@ -9,7 +9,7 @@
       <div class="tutorial-nav content-top-margin">
         <h3>Tutorial Steps</h3>
         <% @tutorial.steps.each do |step| %>
-          <%= link_to "#{step.content}", "##{step.id}" %> <br />
+          <%= link_to "#{step.name}", "##{step.id}" %> <br />
         <% end %>
       </div>
       <div class="card content-top-margin">
@@ -18,11 +18,12 @@
             <h2><%= @tutorial.title %></h2>
             <h3><%= @tutorial.tagline %></h3>
 
+            <div class="step">
             <% @tutorial.steps.each do |step| %>
-              <li id="<%= step.id %>">
-                <%= step.content %>
-              </li>
+              <h5 class="step-name">  <%= step.name %> </h5>
+              <p id="<%= step.id %>" class="step-content"> <%= step.content %> </p>
             <% end %>
+            </div>
 
             <div class="text-right" id="test">
               <h3><small>

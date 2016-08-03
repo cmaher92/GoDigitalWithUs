@@ -432,6 +432,8 @@ a.remove-text-decoration:hover {
   align-items: stretch;
 }
 
+// Tutorial card
+
 .card {
   width: 66%;
 }
@@ -439,3 +441,23 @@ a.remove-text-decoration:hover {
 .tutorial-nav {
   width: 33%;
 }
+
+// Step
+
+.step {
+  margin: 2em 0 2em 0;
+}
+
+// .step-name {
+//   color: #545454;
+//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//   font-weight: 300;
+//   font-size: 22px;
+// }
+//
+// .step-content {
+//   color: #333;
+//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//   font-weight: 300;
+//   font-size: 16px;
+// }
