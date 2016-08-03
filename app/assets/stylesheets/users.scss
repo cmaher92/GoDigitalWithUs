@@ -1,0 +1,25 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Alignment
+
+.content-container {
+  display: block;
+  width: 100%;
+  margin: 50px 0 100px 0;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
