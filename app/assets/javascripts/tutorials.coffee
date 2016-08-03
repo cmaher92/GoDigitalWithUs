@@ -78,7 +78,7 @@ $ ->
        ]
        [
          'chart'
-         [ 'chart' ]
+         [ 'chart', 'picture' ]
        ]
 
        [
