@@ -86,4 +86,3 @@ $ ->
          ['linkDialogShow', 'unlink']
        ]
       ]
-
