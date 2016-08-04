@@ -26,11 +26,12 @@
           </div>
         <% end %>
       </div>
-      <div class="col-sm-4">
-        <h4>How to Help</h4>
-        <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-danger" %>
-      </div>
-      </div>
+      <% if user_signed_in? %>
+        <div class="col-sm-4">
+          <h4>How to Help</h4>
+          <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-danger" %>
+        </div>
+      <% end %>
     </div>
     <div class="row"></div>
       <div class="col-sm-12 text-center">
