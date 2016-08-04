@@ -104,6 +104,9 @@ div {
 
 .content-wrap {
   margin-top: 135px;
+  @media screen and (max-width: 767px) {
+    margin-top: 180px;
+  }
 }
 
 .content-top-margin {
@@ -132,6 +135,9 @@ header {
   .search {
     font-size: 2rem;
     height: 4.4rem;
+  }
+  .searchbar {
+    top: 15px;
   }
 }
 
