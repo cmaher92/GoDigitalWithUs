@@ -1,10 +1,10 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-3">
+      <div class="col-md-offset-1 col-md-2 col-sm-3">
         <%= link_to image_tag("logo-web.png", alt: "Go Digital With Us", height: "75"), root_path %>
       </div>
-      <div class="col-md-9 col-sm-9">
+      <div class="col-md-8 col-sm-9">
         <%= form_tag(root_path, :method => "get", id: "search-form", class: "input-group searchbar") do %>
         <%= text_field_tag :search, params[:search], class: "form-control search", autofocus: true, placeholder: "Search Tutorials" %>
         <div class="input-group-btn">
