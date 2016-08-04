@@ -118,7 +118,6 @@ header {
   background-color: $primary-darkest;
   padding: 25px 0;
   text-align: center;
-  position: fixed;
   top: 0px;
   width: 100%;
   z-index: 1000;
@@ -181,7 +180,7 @@ footer:after {
 /* footer */
 
 footer {
-  padding: 70px 0px 300px 0px;
+  padding: 70px 0px 200px 0px;
   background-color: $primary-darkest;
   height: 125px;
   color: white;
@@ -398,4 +397,18 @@ a.remove-text-decoration:hover {
 /* tutorial pages */
 .tutorial-min {
   min-height: 300px;
+}
+
+/* Registration & Login Forms */
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
 }

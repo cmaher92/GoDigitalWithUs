@@ -78,7 +78,7 @@ $ ->
        ]
        [
          'chart'
-         [ 'chart' ]
+         [ 'chart', 'picture' ]
        ]
 
        [
@@ -86,4 +86,3 @@ $ ->
          ['linkDialogShow', 'unlink']
        ]
       ]
-    
