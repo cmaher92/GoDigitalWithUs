@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-
-  devise_for :users
-  root               'static_pages#home'
+  root               'static_pages#home'\
+  
   get 'guide'     => 'static_pages#guide'
-  get 'dashboard' => 'users#show'
   get 'contact'   => 'static_pages#contact'
+  get 'style'     => 'static_pages#style'
+
+  get 'dashboard' => 'users#show'
 
   resources :tutorials
-
+  devise_for :users
 end

@@ -96,6 +96,26 @@ a {
   }
 }
 
+.visited {
+  color: $visited;
+}
+
+.dark-background {
+  padding: 10px;
+  background-color: $primary-darkest;
+  color: white;
+  a {
+    color: $gray-lightest;
+    &:visited {
+      color: $gray-lightest;
+    }
+    &:hover {
+      color: $gray-light;
+      text-decoration: none;
+    }
+  }
+}
+
 div {
   &.field, &.actions {
     margin-bottom: 10px;
@@ -104,6 +124,9 @@ div {
 
 .content-wrap {
   margin-top: 135px;
+  @media screen and (max-width: 767px) {
+    margin-top: 180px;
+  }
 }
 
 .content-top-margin {
@@ -132,6 +155,9 @@ header {
   .search {
     font-size: 2rem;
     height: 4.4rem;
+  }
+  .searchbar {
+    top: 15px;
   }
 }
 
@@ -208,7 +234,6 @@ footer {
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
-  width: 100%;
   -webkit-font-smoothing: antialiased;
   &:hover {
     background-color: $primary-darker;
