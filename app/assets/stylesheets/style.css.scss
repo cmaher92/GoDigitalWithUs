@@ -431,3 +431,58 @@ a.remove-text-decoration:hover {
 .margin-bottom {
   margin-bottom: 50px;
 }
+
+.page-wrap {
+  width: 600px;
+  margin: 15px auto;
+  position: relative;
+}
+
+.sidebar {
+  height: 100px;
+  width: 190px;
+  position: relative;
+  // margin-left: 410px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tutorials-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+// Tutorial card
+
+.card {
+  width: 66%;
+}
+
+.tutorial-nav {
+  width: 33%;
+}
+
+// Step
+
+.step {
+  margin: 2em 0 2em 0;
+}
+
+// .step-name {
+//   color: #545454;
+//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//   font-weight: 300;
+//   font-size: 22px;
+// }
+//
+// .step-content {
+//   color: #333;
+//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//   font-weight: 300;
+//   font-size: 16px;
+// }

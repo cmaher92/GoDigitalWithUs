@@ -9,22 +9,26 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <%= simple_form_for(@tutorial) do |f| %>
+
             <div class="form-group">
-              <%= f.input :title, placeholder: "Write a descriptive title that begins with 'How to . . .'", input_html: { class: "form-control" } %>
+              <%= f.label :title %><br />
+              <%= f.text_field :title %>
             </div>
 
             <div class="form-group">
-              <%= f.input :tagline, label: "Description", placeholder: "Include a brief description of what this tutorial will cover", as: "text", input_html: { class: "form-control" } %>
+              <%= f.label :tagline %><br />
+              <%= f.text_field :tagline %>
             </div>
 
-            <div class="form-group">
-              <%= f.input :content, label: false, input_html: { class: "summernote-plugin" } %>
+            <%= f.fields_for :steps do |builder| %>
+              <%= render 'step_fields', f: builder %>
+            <% end %>
+            <%= link_to_add_fields "Add Steps", f, :steps %>
+
+            <div class="actions">
+              <%= f.submit %>
             </div>
 
-            <div class="form-group">
-              <%= f.button :submit, value: "Submit for Review", class: "primary-button" %>
-            </div>
           <% end %>
         </div>
       </div>
