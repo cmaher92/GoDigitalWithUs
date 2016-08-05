@@ -122,13 +122,6 @@ div {
   }
 }
 
-.content-wrap {
-  margin-top: 160px;
-  @media screen and (max-width: 767px) {
-    margin-top: 320px;
-  }
-}
-
 .content-top-margin {
   margin-top: 25px;
 }
@@ -138,7 +131,6 @@ header {
   background-color: $gray-lightest;
   padding: 25px 0 0 0;
   text-align: center;
-  position: fixed;
   top: 0px;
   width: 100%;
   z-index: 1000;
