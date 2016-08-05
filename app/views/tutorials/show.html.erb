@@ -30,6 +30,11 @@
                 <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
                 <%= link_to 'Back', tutorials_path %>
               </small></h3>
+              <% if current_user && current_user.admin? %>
+              <h3><small>
+              <%= link_to "delete", tutorial_path(@tutorial.id),  method: :delete %>
+              </h3></small>
+              <% end %>
             </div>
           </div>
         </div>

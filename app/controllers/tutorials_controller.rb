@@ -57,10 +57,14 @@ class TutorialsController < ApplicationController
   # DELETE /tutorials/1
   # DELETE /tutorials/1.json
   def destroy
-    @tutorial.destroy
-    respond_to do |format|
-      format.html { redirect_to tutorials_url, notice: 'Tutorial was successfully destroyed.' }
-      format.json { head :no_content }
+    # only users who have created the tutorial can delete or admins
+    @user = current_user
+    if @tutorial.user_id == @user.id || @user.admin == true
+      @tutorial.destroy
+      respond_to do |format|
+        format.html { redirect_to tutorials_url, notice: 'Tutorial was successfully destroyed.' }
+        format.json { head :no_content }
+      end
     end
   end
 
