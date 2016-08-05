@@ -72,6 +72,7 @@ class TutorialsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_tutorial
       @tutorial = Tutorial.find(params[:id])
+      @tutorial.increment!(:impressions, by = 1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
