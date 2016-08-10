@@ -57,10 +57,14 @@ class TutorialsController < ApplicationController
   # DELETE /tutorials/1
   # DELETE /tutorials/1.json
   def destroy
-    @tutorial.destroy
-    respond_to do |format|
-      format.html { redirect_to tutorials_url, notice: 'Tutorial was successfully destroyed.' }
-      format.json { head :no_content }
+    # only users who have created the tutorial can delete or admins
+    @user = current_user
+    if @tutorial.user_id == @user.id || @user.admin == true
+      @tutorial.destroy
+      respond_to do |format|
+        format.html { redirect_to tutorials_url, notice: 'Tutorial was successfully destroyed.' }
+        format.json { head :no_content }
+      end
     end
   end
 
@@ -68,11 +72,12 @@ class TutorialsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_tutorial
       @tutorial = Tutorial.find(params[:id])
+      @tutorial.increment!(:impressions, by = 1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tutorial_params
-      params.require(:tutorial).permit(:title, :tagline, :content)
+      params.require(:tutorial).permit(:title, :tagline, steps_attributes: [:id, :content, :name])
     end
 
     def require_login
