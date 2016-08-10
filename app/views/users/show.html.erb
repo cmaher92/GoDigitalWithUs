@@ -1,20 +1,22 @@
-<div class="content-container">
-  <div class="container flex-column">
-    <div class="col-md-12">
-      <h2 id="popular-title">Your created tutorials</h2>
-      <div class="row">
-        <% @tutorials.each do |tutorial| %>
-          <div class="col-sm-6 card-bottom-margin">
-            <%= link_to tutorial, :class => "remove-text-decoration" do %>
-              <div class="card card-hover hover">
-                <div class="card-text">
-                  <h3 class="card-title"><%= tutorial.title %></h3>
-                  <h5 class="tagline"><%= tutorial.tagline %></h5>
+<div class="content-wrap">
+  <div class="container footer-margin">
+    <div class="container flex-column">
+      <div class="col-md-12">
+        <h2 id="popular-title">Your created tutorials</h2>
+        <div class="row">
+          <% @tutorials.each do |tutorial| %>
+            <div class="col-sm-6 card-bottom-margin">
+              <%= link_to tutorial, :class => "remove-text-decoration" do %>
+                <div class="card card-hover hover">
+                  <div class="card-text">
+                    <h3 class="card-title"><%= tutorial.title %></h3>
+                    <h5 class="tagline"><%= tutorial.tagline %></h5>
+                  </div>
                 </div>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
