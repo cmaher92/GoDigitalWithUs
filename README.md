@@ -1,39 +1,108 @@
-<p align="center">
-  <b>ConnectALL</b><br>
-  <i>Platform to help close the Digital Divide gap in collaboration with the White House</i><br>
-  <a href="http://make.sc/whitehouse">The Initiative</a> |
-  <a href="https://www.makeschool.com/founding-class">Make School</a>
-  <!--<a href="#">Press Kit</a>-->
-  <br><br>
-  <img src="https://www.whitehouse.gov/profiles/forall/modules/custom/gov_whitehouse_www/images/icons/wh_logo_seal.png" height="100" />
-</p>
+#[Go Digital with Us](http://www.godigitalwith.us/)
+![ruby version](https://img.shields.io/badge/ruby-2.3.1-brightgreen.svg)
+
+<center>
+  ![](https://www.whitehouse.gov/profiles/forall/modules/custom/gov_whitehouse_www/images/icons/wh_logo_seal.png "White House")
+</center>
+
+#####*A web platform to help close the Digital Divide in collaboration with the White House*
 ---
 
-### What is ConnectALL?
-Our project is a curated online repository of internet/computer skill tutorials created by a nationwide community of “tech helpers” as a mobile-friendly, responsive web-application. Our web app ships with a basic suite of digital literacy tutorials designed to help teach people the basic skills and knowledge needed to eliminate the digital divide.
+### Table of Contents
+* [What is Go Digital with Us?](#what-is-go-digital-with-us?)
+* [How to contribute](#how-to-contribute)
+* [Getting started](#getting-started-in-osx)
 
-### How did this start?
-In the Obama Administration's [recent initiative](make.sc/whitehouse) he calls on the tech community to help the United States move more of its population on to the Internet. This is our response, directly and in collaboration with the White House. We are building a platform to help librarians and "tech helpers" around the country better assist those looking to become connected. This project is open-source--any help is appreciated!
+---
 
-### Who are we?
-We are four students from [Make School](http://makeschool.com), a two-year college alternative dedicated to computer science and entrepreneurship.  Make School is located in San Francisco, CA.
+### What is Go Digital with Us?
+The Obama Administration announced the [ConnectALL Initiative](http://make.sc/whitehouse) in March 2016 to give all Americans access to broadband connectivity. In order to do so, the administration called on the tech community to help the United States to move more of its population on to the Internt. A team of students at [Make School](https://www.makeschool.com/founding-class) conducted weeks of user research and designed GDwU as an open-sourced curated online repository of Internet/computer skills tutorials as a mobile-friendly responsive web-app.
 
-### How can you help?
-Like any open-source project, we welcome pull requests! We are looking for volunteers with the technical skills necessary to help us build and maintain this project.  Alternatively, you can help by logging on to the web app and creating content in the form of tutorials!
+A basic digital literacy suite is shipped with the app of Computer Basics and Internet Basics as a tool for those just getting started with new technologies. Content is contritubed to by the nationwide community of "tech helpers". Our tech helpers include tech labs, librarians, volunteers and anyone who can provide tutorials to help our community become better connected throughout our nation.
 
-### What Technologies leveraged?
-Our current stack is *Ruby on Rails* with *Bootstrap*.
+### How to contribute
+There are several ways to contribute to the project!
 
-### Git Guidelines
-1. All git commits will be present tense
-2. Follow the workflow
+* **Contribute content**: In order to be successful, we need all of you to provide content to help those understand how to connect using the Internet. Things that seem basic and intuitive to those that have grown up with technology can seem daunting to many who have never used it. Spend 30 minutes creating a tutorial and submit it for review! It can be something a simple as creating an email account with yur favorite email service!
 
-### Team Workflow
-0. Git status and remove things from stagint that don't belong `git status` & `git rm <filename>`
-1. Fetch and merge changes from the remote `git fetch` & `git merge origin/master`
-2. Create a branch to work on a new project feature `git branch <new_feature_name>`
-3. Develop the feature on your branch and commit your work `git commit -m "<present tense commit message"`
-4. Fetch and merge from the remote again (in case new commits were made while you were working) `git fetch` & `git merge origin/master`
-5. Push your branch up to the remote for review `git push origin <your_branch_name>`
+* **Create issues**: Found a bug? Have a suggestion? Please open an [issue](https://github.com/cmaher92/ConnectAll/issues) so we can take a look!
 
-*Steps 1 and 4 are a safeguard against merge conflicts*
+* **Contribute to our code**: Found a fix for a bug? Want to add a feature? Create a [pull request](https://github.com/cmaher92/ConnectAll/pulls) and we'll take a look!
+
+* **Get involved**: If you'd like to get more involved, please feel free to contact us at `godigitalwithus@gmail.com`.
+
+### Getting started in OSX
+1. Clone the project
+
+  ```
+  git clone https://github.com/cmaher92/ConnectAll.git
+  ```
+
+1. Install rbenv: If you already have Ruby and need to update to 2.3.1, skip to step 3.
+  * Install Hombrew: If you have Homebrew, skip to next step.
+
+    ```
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+
+  * Update Homebrew
+
+    ```
+    brew update
+    ```
+
+  * Install rbenv
+
+    ```
+    brew install rbenv
+    ```
+
+1. Install Ruby
+  * Update `ruby-build`
+
+    ```
+    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+    ```
+
+  * Install Ruby 2.3.1
+
+    ```
+    rbenv install 2.3.1
+    ```
+
+  * Set global Ruby version to 2.3.1
+
+    ```
+    rbenv global 2.3.1
+    ```
+
+1. Install bundler
+
+  ```
+  gem install bundler
+  rbenv rehash
+  ```
+
+1. Install gems
+
+  ```
+  bundle install
+  ```
+
+1. Set up your local database
+
+  ```
+  bundle exec rake db:setup
+  ```
+
+1. Run the server
+
+  ```
+  bundle exec rails s
+  ```
+
+1. Go to localhost:3000
+
+  ```
+  http://localhost:3000/
+  ```

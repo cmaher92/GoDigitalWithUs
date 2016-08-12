@@ -96,6 +96,26 @@ a {
   }
 }
 
+.visited {
+  color: $visited;
+}
+
+.dark-background {
+  padding: 10px;
+  background-color: $primary-darkest;
+  color: white;
+  a {
+    color: $gray-lightest;
+    &:visited {
+      color: $gray-lightest;
+    }
+    &:hover {
+      color: $gray-light;
+      text-decoration: none;
+    }
+  }
+}
+
 div {
   &.field, &.actions {
     margin-bottom: 10px;
@@ -104,6 +124,9 @@ div {
 
 .content-wrap {
   margin-top: 135px;
+  @media screen and (max-width: 767px) {
+    margin-top: 180px;
+  }
 }
 
 .content-top-margin {
@@ -115,7 +138,6 @@ header {
   background-color: $primary-darkest;
   padding: 25px 0;
   text-align: center;
-  position: fixed;
   top: 0px;
   width: 100%;
   z-index: 1000;
@@ -133,6 +155,9 @@ header {
   .search {
     font-size: 2rem;
     height: 4.4rem;
+  }
+  .searchbar {
+    top: 15px;
   }
 }
 
@@ -175,7 +200,7 @@ footer:after {
 /* footer */
 
 footer {
-  padding: 70px 0px 300px 0px;
+  padding: 70px 0px 200px 0px;
   background-color: $primary-darkest;
   height: 125px;
   color: white;
@@ -209,7 +234,6 @@ footer {
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
-  width: 100%;
   -webkit-font-smoothing: antialiased;
   &:hover {
     background-color: $primary-darker;
@@ -392,4 +416,18 @@ a.remove-text-decoration:hover {
 /* tutorial pages */
 .tutorial-min {
   min-height: 300px;
+}
+
+/* Registration & Login Forms */
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
 }

@@ -7,6 +7,12 @@ class StaticPagesController < ApplicationController
     end
   end
 
+  def guide
+  end
+
   def contact
+  end
+
+  def style
   end
 end

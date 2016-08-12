@@ -6,14 +6,21 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <%= favicon_link_tag '/favicon.ico' %>
     <%= render 'layouts/shim' %>
   </head>
 
   <body>
-    <div class="outside-footer">
-      <%= render 'layouts/header' %>
-      <%= yield %>
-    </div>
-    <%= render 'layouts/footer' %>
+  <%= render 'layouts/header' %>
+
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <%= yield %>
+
+  <%= render 'layouts/footer' %>
   </body>
 </html>

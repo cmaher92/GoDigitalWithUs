@@ -1,5 +1,6 @@
 class TutorialsController < ApplicationController
   before_action :set_tutorial, only: [:show, :edit, :update, :destroy]
+  before_action :require_login, only: [:new, :update, :destroy]
 
   # GET /tutorials
   # GET /tutorials.json
@@ -26,7 +27,7 @@ class TutorialsController < ApplicationController
   # POST /tutorials
   # POST /tutorials.json
   def create
-    @tutorial = Tutorial.new(tutorial_params)
+    @tutorial = current_user.tutorials.build(tutorial_params)
 
     respond_to do |format|
       if @tutorial.save
@@ -56,10 +57,14 @@ class TutorialsController < ApplicationController
   # DELETE /tutorials/1
   # DELETE /tutorials/1.json
   def destroy
-    @tutorial.destroy
-    respond_to do |format|
-      format.html { redirect_to tutorials_url, notice: 'Tutorial was successfully destroyed.' }
-      format.json { head :no_content }
+    # only users who have created the tutorial can delete or admins
+    @user = current_user
+    if @tutorial.user_id == @user.id || @user.admin == true
+      @tutorial.destroy
+      respond_to do |format|
+        format.html { redirect_to tutorials_url, notice: 'Tutorial was successfully destroyed.' }
+        format.json { head :no_content }
+      end
     end
   end
 
@@ -67,10 +72,18 @@ class TutorialsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_tutorial
       @tutorial = Tutorial.find(params[:id])
+      @tutorial.increment!(:impressions, by = 1)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tutorial_params
       params.require(:tutorial).permit(:title, :tagline, :content)
+    end
+
+    def require_login
+      unless user_signed_in?
+        flash[:error] = "You must be logged in to access this section"
+        redirect_to new_user_registration_url # halts request cycle
+      end
     end
 end
