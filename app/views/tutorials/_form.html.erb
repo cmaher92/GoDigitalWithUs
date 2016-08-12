@@ -1,28 +1,32 @@
-<%= simple_form_for(@tutorial) do |f| %>
-
+<%= form_for @tutorial do |f| %>
   <% if @tutorial.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@tutorial.errors.count, "error") %> prohibited this tutorial from being saved:</h2>
+    <div class="error_messages">
+      <h2><%= pluralize(@tutorial.errors.count, "error") %> prohibited this survey from being saved:</h2>
       <ul>
-        <% @tutorial.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
+      <% @tutorial.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
       </ul>
     </div>
   <% end %>
 
   <div class="form-group">
-    <%= f.input :title, placeholder: "Title", input_html: { class: "form-control" } %>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
   </div>
 
   <div class="form-group">
-    <%= f.input :tagline, placeholder: "Tagline", input_html: { class: "form-control" } %>
+    <%= f.label :tagline %><br />
+    <%= f.text_field :tagline %>
   </div>
 
-  <div class="form-group">
-    <%= f.input :content, label: false, input_html: { class: "summernote-plugin" } %>
-  </div>
+  <%= f.fields_for :steps do |builder| %>
+    <%= render 'step_fields', f: builder %>
+  <% end %>
+  <%= link_to_add_fields "Add Steps", f, :steps %>
+
   <div class="actions">
-    <%= f.submit, value: "Submit Changes for Review", class: "primary-button" %>
+    <%= f.submit %>
   </div>
+
 <% end %>

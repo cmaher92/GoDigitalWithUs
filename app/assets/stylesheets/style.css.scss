@@ -122,21 +122,14 @@ div {
   }
 }
 
-.content-wrap {
-  margin-top: 135px;
-  @media screen and (max-width: 767px) {
-    margin-top: 180px;
-  }
-}
-
 .content-top-margin {
   margin-top: 25px;
 }
 
 /* header */
 header {
-  background-color: $primary-darkest;
-  padding: 25px 0;
+  background-color: $gray-lightest;
+  padding: 25px 0 0 0;
   text-align: center;
   top: 0px;
   width: 100%;
@@ -172,6 +165,37 @@ a.brand {
   font-family: $merriweather;
   text-decoration: none;
 }
+
+/* nav bar */
+ 
+ nav {
+   border-radius: 0 !important;
+   -moz-border-radius: 0 !important;
+ }
+ 
+ nav.navbar {
+   ul.navbar-nav {
+     color: white;
+     a {
+       color: $gray-lightest;
+       &:visited {
+         color: $gray-lightest;
+       }
+       &:hover {
+         color: $gray-light;
+         text-decoration: none;
+       }
+     }
+   }
+ }
+ 
+ .navbar-default {
+   background-color: $primary-darkest;
+   border: 0;
+   margin-bottom: 0px;
+   margin-top: 15px;
+ }
+ 
 
 /* sticky-footer hackery */
 
@@ -226,7 +250,7 @@ footer {
   display: inline-block;
   font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
   font-size: 1.7rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1;
   margin-bottom: 0.5em;
   margin-right: 0.5em;
@@ -234,7 +258,8 @@ footer {
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
-  -webkit-font-smoothing: antialiased;
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
   &:hover {
     background-color: $primary-darker;
     border-bottom: 0;
@@ -431,3 +456,58 @@ a.remove-text-decoration:hover {
 .margin-bottom {
   margin-bottom: 50px;
 }
+
+.page-wrap {
+  width: 600px;
+  margin: 15px auto;
+  position: relative;
+}
+
+.sidebar {
+  height: 100px;
+  width: 190px;
+  position: relative;
+  // margin-left: 410px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tutorials-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+// Tutorial card
+
+.card {
+  width: 66%;
+}
+
+.tutorial-nav {
+  width: 33%;
+}
+
+// Step
+
+.step {
+  margin: 2em 0 2em 0;
+}
+
+// .step-name {
+//   color: #545454;
+//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//   font-weight: 300;
+//   font-size: 22px;
+// }
+//
+// .step-content {
+//   color: #333;
+//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//   font-weight: 300;
+//   font-size: 16px;
+// }
