@@ -168,24 +168,26 @@ a.brand {
  }
  
  nav.navbar {
-  border-top: 1px solid $gray-lightest;
+  border-top: 1px solid $cool-blue-lighter;
    ul.navbar-nav {
      color: white;
      a {
-       color: $gray-lightest;
-       &:visited {
-         color: $gray-lightest;
-       }
-       &:hover {
-         color: $gray-light;
-         text-decoration: none;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        color: $gray-lightest;
+        &:visited {
+          color: $gray-lightest;
+        }
+        &:hover {
+          color: $primary-darkest;
+          text-decoration: none;
        }
      }
    }
  }
  
  .navbar-default {
-   background-color: $primary-darkest;
+   background-color: $cool-blue-lighter;
    border: 0;
    margin-bottom: 0px;
    margin-top: 15px;
