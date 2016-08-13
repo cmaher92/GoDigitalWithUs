@@ -13,6 +13,6 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def style
+  def developer
   end
 end
