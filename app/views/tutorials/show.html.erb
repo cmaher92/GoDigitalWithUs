@@ -5,54 +5,44 @@
     </div>
 
     <div class="row">
-      <div class="container tutorials-container">
-      <div class="tutorial-nav content-top-margin">
-        <h3>Tutorial Steps</h3>
-        <% @tutorial.steps.each do |step| %>
-          <%= link_to "#{step.name}", "##{step.id}" %> <br />
-        <% end %>
-      </div>
-      <div class="card content-top-margin">
-        <div class="row tutorial-min">
-          <div class="col-sm-12">
-            <h2><%= @tutorial.title %></h2>
-            <h3><%= @tutorial.tagline %></h3>
+      <div class="col-sm-offset-2 col-sm-8">
+        <div class="card content-top-margin">
+          <div class="row tutorial-min">
+            <div class="col-sm-12">
+              <h2><%= @tutorial.title %></h2>
+              <h3><%= @tutorial.tagline %></h3>
 
-            <div class="step">
-            <% @tutorial.steps.each do |step| %>
-              <h5 class="step-name">  <%= step.name %> </h5>
-              <p id="<%= step.id %>" class="step-content"> <%= step.content %> </p>
-            <% end %>
-            </div>
-
-            <div class="text-right" id="test">
-              <h3><small>
-                <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
-                <%= link_to 'Back', tutorials_path %>
-              </small></h3>
-              <% if current_user && current_user.admin? %>
-              <h3><small>
-              <%= link_to "delete", tutorial_path(@tutorial.id),  method: :delete %>
-              </h3></small>
+              <div class="step">
+              <% @tutorial.steps.each do |step| %>
+                <h5 class="step-name">  <%= step.name %> </h5>
+                <p id="<%= step.id %>" class="step-content"> <%= step.content %> </p>
               <% end %>
+              </div>
+
+              <div class="text-right" id="test">
+                <h3><small>
+                  <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
+                  <%= link_to 'Back', tutorials_path %>
+                </small></h3>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 footer text-center">
+              <h3>Suggested for You</h3>
+              <ul class="list-unstyled">
+                <% @suggestions.each do |suggestion| %>
+                  <li>
+                    <%= link_to suggestion.title, suggestion %>
+                  </li>
+                <% end %>
+              </ul>
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-sm-12 footer text-center">
-            <h3>Suggested for You</h3>
-            <ul class="list-unstyled">
-              <% @suggestions.each do |suggestion| %>
-                <li>
-                  <%= link_to suggestion.title, suggestion %>
-                </li>
-              <% end %>
-            </ul>
-          </div>
-        </div>
       </div>
-    </div>
     </div>
   </div>
 </div>
