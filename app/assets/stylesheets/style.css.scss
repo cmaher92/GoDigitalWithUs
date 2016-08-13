@@ -307,7 +307,6 @@ footer {
   padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
-  width: 100%;
   -webkit-font-smoothing: antialiased;
   &:hover {
     background-color: $secondary-dark;
@@ -488,11 +487,11 @@ a.remove-text-decoration:hover {
   margin: 2em 0 2em 0;
 }
 
-h1.style-guide {
+h1.style-guide, h2.creation-guide {
   color: $primary;
 }
 
-h2.style-guide {
+h2.style-guide, h4.creation-guide {
   color: $cool-blue-lighter;
 }
 
