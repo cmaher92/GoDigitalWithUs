@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   get 'guide'     => 'static_pages#guide'
   get 'contact'   => 'static_pages#contact'
-  get 'style'     => 'static_pages#style'
+  get 'developer'     => 'static_pages#developer'
 
   get 'dashboard' => 'users#show'
 

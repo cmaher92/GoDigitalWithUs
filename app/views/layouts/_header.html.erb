@@ -1,37 +1,27 @@
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="top-margin">
-          <a class="brand" href="/">GoDigitalWith.Us</a>
-        </div>
-      </div>
-      <div class="col-md-8">
-        <%= form_tag(root_path, :method => "get", id: "search-form", class: "input-group searchbar") do %>
-          <%= text_field_tag :search, params[:search], class: "form-control search", autofocus: true, placeholder: "Search Tutorials" %>
-          <div class="input-group-btn">
-            <%= button_tag(type: "submit", class: "search primary-button") do %>
-              <i class="glyphicon glyphicon-search"></i> <span class="search-shim hidden-xs">Search</span>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-    </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">GoDigitalWith.Us</a>      
   </div>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <% if user_signed_in? %>
-          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li><%= link_to "Sign up", new_user_registration_path %></li>
-          <li><%= link_to "Login", new_user_session_path %></li>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav top-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+
+    <%= form_tag(root_path, :method => "get", id: "search-form", class: "input-group searchbar") do %>
+      <%= text_field_tag :search, params[:search], class: "form-control search", autofocus: true, placeholder: "Search Tutorials" %>
+      <div class="input-group-btn">
+        <%= button_tag(type: "submit", class: "search primary-button") do %>
+          <i class="glyphicon glyphicon-search"></i> <span class="search-shim hidden-xs hidden-sm">Search</span>
         <% end %>
-      </ul>
-    </div>
-  </nav>
-</header>
+      </div>
+    <% end %>
+  </div>
+</nav>

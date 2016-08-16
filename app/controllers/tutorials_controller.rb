@@ -17,6 +17,7 @@ class TutorialsController < ApplicationController
   # GET /tutorials/new
   def new
     @tutorial = Tutorial.new
+    @user = current_user
   end
 
   # GET /tutorials/1/edit
