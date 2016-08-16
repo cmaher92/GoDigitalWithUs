@@ -10,7 +10,8 @@
           <div class="row tutorial-min">
             <div class="col-sm-12">
               <h2><%= @tutorial.title %></h2>
-              <h3><%= @tutorial.tagline %></h3>
+              <h4 class="subtitle"><%= @tutorial.tagline %></h4>
+              <h6>by: <%= @tutorial.user.email %></h6>
 
               <div class="step">
               <% @tutorial.steps.each do |step| %>
@@ -24,26 +25,12 @@
                   <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
                   <%= link_to 'Back', tutorials_path %>
                 </small></h3>
-                <% if current_user && current_user.admin? %>
-                <h3><small>
-                <%= link_to "delete", tutorial_path(@tutorial.id),  method: :delete %>
-                </h3></small>
-                <% end %>
-
               </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12 footer text-center">
-              <h3>Suggested for You</h3>
-              <ul class="list-unstyled">
-                <% @suggestions.each do |suggestion| %>
-                  <li>
-                    <%= link_to suggestion.title, suggestion %>
-                  </li>
-                <% end %>
-              </ul>
+              <% if current_user && current_user.admin? %>
+              <h3><small>
+              <%= link_to "delete", tutorial_path(@tutorial.id),  method: :delete %>
+              </h3></small>
+              <% end %>
             </div>
           </div>
         </div>
