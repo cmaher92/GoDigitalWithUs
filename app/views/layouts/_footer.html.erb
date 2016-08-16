@@ -12,7 +12,7 @@
         <%= link_to "Developers",               "/developer" %>
       </div>
       <div class="col-sm-4">
-        <h4>Contributors</h4>
+        <h4>Become a Contributor</h4>
         <% if user_signed_in? %>
           <div class="flex-column">
           <%= link_to 'Dashboard', dashboard_path %>
@@ -21,16 +21,15 @@
           </div>
         <% else %>
           <div class="flex-column">
-          <%= link_to "Sign up", new_user_registration_path %>
-          <%= link_to "Login", new_user_session_path %>
+          <%= link_to "Create Contributor Account", new_user_registration_path %>
+          <%= link_to "Login as a Contributor", new_user_session_path %>
           </div>
         <% end %>
       </div>
+      <div class="col-sm-4">
       <% if user_signed_in? %>
-        <div class="col-sm-4">
-          <h4>How to Help</h4>
-          <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-danger" %>
-        </div>
+        <h4>How to Help</h4>
+        <%= link_to "Create a Tutorial", new_tutorial_path, class: "btn btn-danger" %>
       <% end %>
     </div>
     <div class="row"></div>

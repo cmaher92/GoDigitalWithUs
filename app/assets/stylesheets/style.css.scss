@@ -95,9 +95,9 @@ a {
 }
 
 /* header */
-header {
+nav.navbar {
   background-color: $primary-darkest;
-  padding: 25px 0 0 0;
+  padding: 11px 0 0 0;
   text-align: center;
   top: 0px;
   width: 100%;
@@ -112,6 +112,10 @@ header {
   }
 }
 
+.top-nav {
+  margin-right: 60px;
+}
+
 .search-shim {
   position: relative;
   bottom: 3px;
@@ -121,8 +125,8 @@ header {
   margin-top: 7px;
 }
 
-a.brand {
-  color: white;
+a.navbar-brand {
+  color: white !important;
   font-size: 22px;
   font-family: $merriweather;
   text-decoration: none;
@@ -133,25 +137,6 @@ a.brand {
  nav {
    border-radius: 0 !important;
    -moz-border-radius: 0 !important;
- }
- 
- nav.navbar {
-  border-top: 1px solid $cool-blue-lighter;
-   ul.navbar-nav {
-     color: white;
-     a {
-        font-size: 1.2em;
-        letter-spacing: 2px;
-        color: $gray-lightest;
-        &:visited {
-          color: $gray-lightest;
-        }
-        &:hover {
-          color: $primary-darkest;
-          text-decoration: none;
-       }
-     }
-   }
  }
  
  .navbar-default {
@@ -523,3 +508,7 @@ abbr[title], abbr[data-original-title] {
     border-bottom: none;
 }
 
+
+
+.searchbar {
+}
