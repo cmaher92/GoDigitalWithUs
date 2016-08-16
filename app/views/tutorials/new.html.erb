@@ -1,34 +1,27 @@
 <div class="content-wrap">
   <div class="container footer-margin">
-   <div class="col-sm-offset-1 col-sm-10 card content-top-margin">
+   <div class="col-sm-offset-1 col-sm-10 content-top-margin">
       <div class="row">
         <div class="col-sm-12">
-          <h1>Create New Tutorial</h1>
+          <h1 class="page-title">Create a New Tutorial</h1>
+          <h6 class="byline">by: <%= @user.email %></h6>
+          <hr class="blue">
         </div>
       </div>
 
       <div class="row">
         <div class="col-sm-12">
           <%= simple_form_for(@tutorial) do |f| %>
-            <div class="form-group">
-              <%= f.label :title %><br />
-              <%= f.text_field :title %>
-            </div>
+            <%= f.label :title, class: 'form-label' %>
+            <%= f.text_field :title, class: 'form-control' %>
 
-            <div class="form-group">
-              <%= f.label :tagline %><br />
-              <%= f.text_field :tagline %>
-            </div>
+            <%= f.label :tagline, class: 'form-label form-label-top-margin' %>
+            <%= f.text_field :tagline, class: 'form-control' %>
 
-            <%= f.fields_for :steps do |builder| %>
-              <%= render 'step_fields', f: builder %>
-            <% end %>
-            <%= link_to_add_fields "Add Steps", f, :steps %>
+            <%= f.label :content, class: 'form-label form-label-top-margin' %>
 
-            <div class="actions">
-              <%= f.submit %>
-            </div>
-
+            <br>
+            <%= f.submit "Submit for Review", class: "btn btn-danger pull-right" %>
           <% end %>
         </div>
       </div>
