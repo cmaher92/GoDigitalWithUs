@@ -59,12 +59,6 @@ h4 {
   font-weight: 700;
   font-size: 17px;
   line-height: 1.3em/20px;
-  #smallest {
-    font-size:10px;
-  }
-  #largest {
-    font-size: 20px;
-  }
 }
 
 h5 {
@@ -93,32 +87,6 @@ a {
   }
   &:hover {
     color: $focus;
-  }
-}
-
-.visited {
-  color: $visited;
-}
-
-.dark-background {
-  padding: 10px;
-  background-color: $primary-darkest;
-  color: white;
-  a {
-    color: $gray-lightest;
-    &:visited {
-      color: $gray-lightest;
-    }
-    &:hover {
-      color: $gray-light;
-      text-decoration: none;
-    }
-  }
-}
-
-div {
-  &.field, &.actions {
-    margin-bottom: 10px;
   }
 }
 
@@ -489,6 +457,56 @@ a.remove-text-decoration:hover {
   margin: 2em 0 2em 0;
 }
 
+/* special headings */
+h1.page-title {
+  color: $primary;
+}
+
+h6.byline {
+  color: $cool-blue-lighter;
+  margin-top: -5px;
+}
+
+hr.blue {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $primary-darker;
+  margin: 1em 0;
+  padding: 0; 
+}
+
+/* forms */
+.form-label {
+  font: $merriweather;
+  text-transform: uppercase;
+}
+
+.form-label-top-margin {
+  margin-top: 10px;
+}
+
+/* developer style guide classes */
+.visited {
+  color: $visited;
+}
+
+.dark-background {
+  padding: 10px;
+  background-color: $primary-darkest;
+  color: white;
+  a {
+    color: $gray-lightest;
+    &:visited {
+      color: $gray-lightest;
+    }
+    &:hover {
+      color: $gray-light;
+      text-decoration: none;
+    }
+  }
+}
+
 h1.style-guide, h2.creation-guide {
   color: $primary;
 }
@@ -497,25 +515,4 @@ h2.style-guide, h4.creation-guide {
   color: $cool-blue-lighter;
 }
 
-hr.style-guide {
-   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid $primary-darker;
-  margin: 1em 0;
-  padding: 0; 
-}
 
-// .step-name {
-//   color: #545454;
-//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-//   font-weight: 300;
-//   font-size: 22px;
-// }
-//
-// .step-content {
-//   color: #333;
-//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-//   font-weight: 300;
-//   font-size: 16px;
-// }
