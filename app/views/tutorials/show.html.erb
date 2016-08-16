@@ -5,19 +5,13 @@
     </div>
 
     <div class="row">
-      <div class="col-md-offset-2 col-md-8">
-        <div class="card content-top-margin">
-          <div class="row tutorial-min">
-            <div class="col-md-12">
-              <h2><%= @tutorial.title %></h2>
-              <h4 class="subtitle"><%= @tutorial.tagline %></h4>
-
-              <div class="step">
-              <% @tutorial.steps.each do |step| %>
-                <h5 class="step-name">  <%= step.name %> </h5>
-                <p id="<%= step.id %>" class="step-content"> <%= step.content %> </p>
-              <% end %>
-              </div>
+      <div class="container tutorials-container">
+      <div class="card content-top-margin">
+        <div class="row tutorial-min">
+          <div class="col-sm-12">
+            <h2><%= @tutorial.title %></h2>
+            <h3><%= @tutorial.tagline %></h3>
+            <p> <%= @tutorial.content %> </p>
 
               <div class="text-right" id="test">
                 <h3><small>
