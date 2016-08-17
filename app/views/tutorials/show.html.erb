@@ -10,12 +10,14 @@
 
           <h2 class="page-title"><%= @tutorial.title %></h2>
           <h3 class="subtitle"><%= @tutorial.tagline %></h3>
-          <% if @tutorial.author == nil %>
-            <h6 class="byline">Author: <%= @tutorial.user.email %> </h6>
-          <% else %>
+
+          <% if !@tutorial.author.nil? && !@tutorial.author.empty? %>
             <h6 class="byline">Author: <%= @tutorial.author %> </h6>
+          <% else %>
+            <h6 class="byline">Author: <%= @tutorial.user.email %> </h6>
           <% end %>
-          <% if @tutorial.organization != nil %>
+
+          <% if !@tutorial.organization.nil? && !@tutorial.organization.empty? %>
             <h6 class="byline">Organization: <%= @tutorial.organization %> </h6>
           <% end %>
           <hr class="blue">
