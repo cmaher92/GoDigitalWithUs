@@ -332,7 +332,7 @@ a.remove-text-decoration:hover {
   margin-bottom: 25px;
 }
 
-.footer-margin {
+.content-margin-bottom {
   margin-bottom: 30px;
 }
 
@@ -389,7 +389,7 @@ a.remove-text-decoration:hover {
 
 /* tutorial pages */
 .tutorial-min {
-  min-height: 300px;
+  min-height: 800px;
 }
 
 /* Registration & Login Forms */
@@ -419,13 +419,6 @@ a.remove-text-decoration:hover {
   // margin-left: 410px;
 }
 
-.tutorials-container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: stretch;
-}
-
 // Tutorial card
 
 .tutorial-card {
@@ -445,6 +438,12 @@ a.remove-text-decoration:hover {
 /* special headings */
 h1.page-title {
   color: $primary;
+}
+
+h3.subtitle {
+  color: $gray-dark;
+  margin-top: 10px;
+  font-style: italic;
 }
 
 h6.byline {
