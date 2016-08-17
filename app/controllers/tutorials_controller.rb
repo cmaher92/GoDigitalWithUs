@@ -80,7 +80,7 @@ class TutorialsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tutorial_params
-      params.require(:tutorial).permit(:title, :tagline, :content)
+      params.require(:tutorial).permit(:title, :tagline, :content, :author, :organization)
     end
 
     def require_login

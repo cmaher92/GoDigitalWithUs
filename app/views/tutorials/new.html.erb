@@ -13,6 +13,15 @@
         <%= f.label :tagline %>
         <%= f.text_field :tagline, class: 'form-control' %>
 
+        <%= f.label :author %>
+        <%= f.text_field :author, class: 'form-control' %>
+
+        <%= f.label :organization %>
+        <%= f.text_field :organization, class: 'form-control' %>
+
+        <%= f.label :content %>
+        <%= f.input :content, label: false, class: 'form-control', input_html: { class: "summernote-plugin" } %>
+
         <%= f.label :content %>
         <%= f.input :content, label: false, class: 'form-control', input_html: { class: "summernote-plugin" } %>
 
