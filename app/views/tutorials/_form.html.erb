@@ -1,4 +1,4 @@
-<%= form_for(@tutorial) do |f| %>
+<%= simple_form_for(@tutorial) do |f| %>
   <% if @tutorial.errors.any? %>
     <div class="error_messages">
       <h2><%= pluralize(@tutorial.errors.count, "error") %> prohibited this survey from being saved:</h2>
@@ -15,6 +15,9 @@
 
   <%= f.label :tagline %>
   <%= f.text_field :tagline, class: 'form-control' %>
+
+  <%= f.label :content %>
+  <%= f.input :content, label: false, class: 'form-control', input_html: { class: "summernote-plugin" } %>
 
   <br>
   <%= f.submit "Submit for Review", class: "btn btn-danger pull-right" %>

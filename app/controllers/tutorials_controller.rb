@@ -29,6 +29,7 @@ class TutorialsController < ApplicationController
   # POST /tutorials.json
   def create
     @tutorial = current_user.tutorials.build(tutorial_params)
+    @user = current_user
 
     respond_to do |format|
       if @tutorial.save
@@ -78,7 +79,7 @@ class TutorialsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tutorial_params
-      params.require(:tutorial).permit(:title, :tagline, steps_attributes: [:id, :content, :name])
+      params.require(:tutorial).permit(:title, :tagline, :content)
     end
 
     def require_login
