@@ -1,45 +1,48 @@
 <div class="content-wrap">
-  <div class="container footer-margin"> 
+  <div class="container content-margin-bottom"> 
     <div class="col-sm-offset-2 col-sm-8">
       <%= notice %>
     </div>
-    <div class="col-sm-offset-2 col-sm-8 card content-top-margin">
+    <div class="col-sm-offset-2 col-sm-8">
       <div class="row">
         <div class="col-sm-12 card-side-margins">
-          <h1>Listing Tutorials</h1>
+          <h2 class="page-title">Listing Tutorials</h2>
+          <hr class="blue">
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
           <h3>Title</h3>
         </div>
-        <div class="col-sm-4">
-          <h3>Tagline</h3>
+        <div class="col-sm-3">
+          <h3>Created By</h3>
         </div>
       </div>
 
       <% @tutorials.each do |tutorial| %>
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <%= tutorial.title %>
           </div>
-          <div class="col-sm-4">
-            <%= tutorial.tagline %>
+          <div class="col-sm-3">
+            <%= tutorial.user.email %>
           </div>
-          <div class="col-sm-4">
-            <h3 class="small">
+          <div class="col-sm-3">
+            <h3 class="small pull-right">
               <%= link_to 'Show', tutorial %> | 
               <%= link_to 'Edit', edit_tutorial_path(tutorial) %> | 
-              <%= link_to 'Destroy', tutorial, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <%= link_to 'Delete', tutorial, method: :delete, data: { confirm: 'Are you sure?' } %>
             </h3>
           </div>
         </div>
         <hr>
       <% end %>
 
-      <div class="row">
-        <h3 class="small"><%= link_to 'Create New Tutorial', new_tutorial_path %></h3>
+      <div class="text-right">
+        <div class="btn secondary-button">
+          <%= link_to "Create Tutorial", "/tutorials/new" %>
+        </div>
       </div>
     </div>
   </div>
