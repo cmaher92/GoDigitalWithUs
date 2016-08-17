@@ -22,10 +22,10 @@
               <%= f.text_field :tagline %>
             </div>
 
-            <%= f.fields_for :steps do |builder| %>
-              <%= render 'step_fields', f: builder %>
-            <% end %>
-            <%= link_to_add_fields "Add Steps", f, :steps %>
+            <div class="form-group">
+              <%= f.label :content %><br />
+              <%= f.text_field :content %>
+            </div>
 
             <div class="actions">
               <%= f.submit %>
