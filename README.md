@@ -9,7 +9,7 @@
 ---
 
 ### Table of Contents
-* [What is GoDigitalwith.Us?](#what-is-godigitalwith.us?)
+* [What is GoDigitalWith.Us?](#what-is-godigitalwith.us?)
 * [How to contribute](#how-to-contribute)
 * [Getting started](#getting-started-in-osx)
 
