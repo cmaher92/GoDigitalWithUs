@@ -1,8 +1,8 @@
 <div class="content-wrap">
-  <div class="container footer-margin">
-    <div class="flex-center margin-top margin-bottom">
-       <div class="col-md-4 col-sm-6 card">
-      <h2>Sign up</h2>
+  <div class="container content-margin-bottom">
+    <div class="col-sm-offset-3 col-sm-6 card">
+      <h2 class="page-title">Create Contributor Account</h2>
+      <hr class="blue">
 
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
@@ -20,13 +20,12 @@
 
         <div class="form-actions">
           <div class="form-group">
-            <%= f.button :submit, "Sign up", class: 'btn btn-primary btn-block' %>
+            <%= f.button :submit, "Sign up", class: 'btn btn-primary' %>
           </div>
         </div>
       <% end %>
 
       <%= render "devise/shared/links" %>
-      </div>
     </div>
   </div>
 </div>

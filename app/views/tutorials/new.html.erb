@@ -1,33 +1,25 @@
 <div class="content-wrap">
-  <div class="container footer-margin">
+  <div class="container content-margin-bottom">
    <div class="col-md-offset-2 col-md-8">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 class="page-title">Create a New Tutorial</h1>
-          <h6 class="byline">by: <%= @user.email %></h6>
-          <hr class="blue">
-        </div>
-      </div>
+      <h2 class="page-title">Create a New Tutorial</h2>
+      <h6 class="byline">by: <%= @user.email %></h6>
+      <hr class="blue">
 
-      <div class="row">
-        <div class="col-sm-12">
-          <%= simple_form_for(@tutorial) do |f| %>
+      <%= simple_form_for(@tutorial) do |f| %>
 
-            <%= f.label :title %>
-            <%= f.text_field :title, class: 'form-control' %>
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %>
 
-            <%= f.label :tagline %>
-            <%= f.text_field :tagline, class: 'form-control' %>
+        <%= f.label :tagline %>
+        <%= f.text_field :tagline, class: 'form-control' %>
 
-            <%= f.label :content %>
-            <%= f.input :content, label: false, class: 'form-control', input_html: { class: "summernote-plugin" } %>
+        <%= f.label :content %>
+        <%= f.input :content, label: false, class: 'form-control', input_html: { class: "summernote-plugin" } %>
 
-            <br>
-            <%= f.submit "Submit for Review", class: "btn btn-danger pull-right" %>
+        <br>
+        <%= f.submit "Submit for Review", class: "btn btn-danger pull-right" %>
 
-          <% end %>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
