@@ -21,10 +21,12 @@
               <%= f.label :tagline %><br />
               <%= f.text_field :tagline %>
             </div>
-            <div class="form-group">
-              <%= f.label :content %><br />
-              <%= f.text_field :content %>
-            </div>
+
+            <%= f.fields_for :steps do |builder| %>
+              <%= render 'step_fields', f: builder %>
+            <% end %>
+            <%= link_to_add_fields "Add Steps", f, :steps %>
+
             <div class="actions">
               <%= f.submit %>
             </div>

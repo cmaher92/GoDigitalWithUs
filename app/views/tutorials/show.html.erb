@@ -6,6 +6,12 @@
 
     <div class="row">
       <div class="container tutorials-container">
+      <div class="tutorial-nav content-top-margin">
+        <h3>Tutorial Steps</h3>
+        <% @tutorial.steps.each do |step| %>
+          <%= link_to "#{step.name}", "##{step.id}" %> <br />
+        <% end %>
+      </div>
       <div class="card content-top-margin">
         <div class="row tutorial-min">
           <div class="col-sm-12">
@@ -18,6 +24,7 @@
                   <%= link_to 'Back', tutorials_path %>
                 </small></h3>
               </div>
+
               <% if current_user && current_user.admin? %>
                 <h3><small>
                 <%= link_to "delete", tutorial_path(@tutorial.id),  method: :delete %>
