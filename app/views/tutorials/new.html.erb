@@ -1,6 +1,6 @@
 <div class="content-wrap">
   <div class="container footer-margin">
-   <div class="col-sm-offset-1 col-sm-10 content-top-margin">
+   <div class="col-md-offset-2 col-md-8">
       <div class="row">
         <div class="col-sm-12">
           <h1 class="page-title">Create a New Tutorial</h1>
@@ -12,27 +12,19 @@
       <div class="row">
         <div class="col-sm-12">
           <%= simple_form_for(@tutorial) do |f| %>
-            <div class="form-group">
-              <%= f.label :title %><br />
-              <%= f.text_field :title %>
-            </div>
 
-            <div class="form-group">
-              <%= f.label :tagline %><br />
-              <%= f.text_field :tagline %>
-            </div>
+            <%= f.label :title %>
+            <%= f.text_field :title, class: 'form-control' %>
 
-            <div class="form-group">
-              <%= f.label :content %><br />
-              <%= f.text_field :content %>
-            </div>
+            <%= f.label :tagline %>
+            <%= f.text_field :tagline, class: 'form-control' %>
 
-            <div class="actions">
-              <%= f.submit %>
-            </div>
+            <%= f.label :content %>
+            <%= f.input :content, label: false, class: 'form-control', input_html: { class: "summernote-plugin" } %>
 
             <br>
             <%= f.submit "Submit for Review", class: "btn btn-danger pull-right" %>
+
           <% end %>
         </div>
       </div>
