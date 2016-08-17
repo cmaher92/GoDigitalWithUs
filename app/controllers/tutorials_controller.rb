@@ -23,6 +23,7 @@ class TutorialsController < ApplicationController
   # GET /tutorials/1/edit
   def edit
     @tutorial = Tutorial.find(params[:id])
+    @user = current_user
   end
 
   # POST /tutorials
