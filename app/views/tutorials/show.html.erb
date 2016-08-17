@@ -24,8 +24,10 @@
           <% if current_user %>
             <div class="text-right" id="test">
               <h3><small>
-                <%= link_to 'Edit', edit_tutorial_path(@tutorial) %>
-                <% if current_user.admin? %>
+                <% if current_user.admin? || current_user.id == @tutorial.user_id %>
+                  <%= link_to 'Edit', edit_tutorial_path(@tutorial) %>
+                <% end %>
+                <% if current_user.admin? || current_user.id == @tutorial.user_id %>
                    | <%= link_to 'Delete', tutorial_path(@tutorial.id),  method: :delete %>
                 <% end %>
               </small></h3>
