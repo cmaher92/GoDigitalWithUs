@@ -10,12 +10,18 @@
 
           <h2 class="page-title"><%= @tutorial.title %></h2>
           <h3 class="subtitle"><%= @tutorial.tagline %></h3>
-          <h6 class="byline">By: <%= @tutorial.author %></h6>
-          <h6 class="byline">Organization: <%= @tutorial.organization %></h6>
+          <% if @tutorial.author == nil %>
+            <h6 class="byline">Author: <%= @tutorial.user.email %> </h6>
+          <% else %>
+            <h6 class="byline">Author: <%= @tutorial.author %> </h6>
+          <% end %>
+          <% if @tutorial.organization != nil %>
+            <h6 class="byline">Organization: <%= @tutorial.organization %> </h6>
+          <% end %>
           <hr class="blue">
 
           <p><%= raw @tutorial.content %></p>
-          
+
           <% if current_user %>
             <div class="text-right" id="test">
               <h3><small>
