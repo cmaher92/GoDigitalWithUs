@@ -90,10 +90,6 @@ a {
   }
 }
 
-.content-top-margin {
-  margin-top: 25px;
-}
-
 /* header */
 nav.navbar {
   background-color: $primary-darkest;
@@ -436,7 +432,7 @@ a.remove-text-decoration:hover {
 }
 
 /* special headings */
-h1.page-title {
+h2.page-title {
   color: $primary;
 }
 
