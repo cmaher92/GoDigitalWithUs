@@ -1,4 +1,4 @@
-#[Go Digital with Us](http://www.godigitalwith.us/)
+#[GoDigitalWith.Us](http://www.godigitalwith.us/)
 ![ruby version](https://img.shields.io/badge/ruby-2.3.1-brightgreen.svg)
 
 <center>
@@ -9,14 +9,14 @@
 ---
 
 ### Table of Contents
-* [What is Go Digital with Us?](#what-is-go-digital-with-us?)
+* [What is GoDigitalwith.Us?](#what-is-godigitalwith.us?)
 * [How to contribute](#how-to-contribute)
 * [Getting started](#getting-started-in-osx)
 
 ---
 
-### What is Go Digital with Us?
-The Obama Administration announced the [ConnectALL Initiative](http://make.sc/whitehouse) in March 2016 to give all Americans access to broadband connectivity. In order to do so, the administration called on the tech community to help the United States to move more of its population on to the Internt. A team of students at [Make School](https://www.makeschool.com/founding-class) conducted weeks of user research and designed GDwU as an open-sourced curated online repository of Internet/computer skills tutorials as a mobile-friendly responsive web-app.
+### What is GoDigitalWith.Us?
+The Obama Administration announced the [ConnectALL Initiative](http://make.sc/whitehouse) in March 2016 to give all Americans access to broadband connectivity. In order to do so, the administration called on the tech community to help the United States to move more of its population on to the Internt. A team of students at [Make School](https://www.makeschool.com/founding-class) conducted weeks of user research and designed GDWU as an open-sourced curated online repository of Internet/computer skills tutorials as a mobile-friendly responsive web-app.
 
 A basic digital literacy suite is shipped with the app of Computer Basics and Internet Basics as a tool for those just getting started with new technologies. Content is contritubed to by the nationwide community of "tech helpers". Our tech helpers include tech labs, librarians, volunteers and anyone who can provide tutorials to help our community become better connected throughout our nation.
 
