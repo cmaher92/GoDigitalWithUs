@@ -1,8 +1,5 @@
 <div class="content-wrap">
   <div class="container footer-margin">
-    <div class="col-md-offset-2 col-md-8">
-      <%= notice %>
-    </div>
 
     <div class="row">
       <div class="container tutorials-container">
@@ -10,7 +7,9 @@
         <div class="row tutorial-min">
           <div class="col-sm-12">
             <h2><%= @tutorial.title %></h2>
-            <h3><%= @tutorial.tagline %></h3>
+            <h4><%= @tutorial.tagline %></h4>
+            <h5>Author: <em><%= @tutorial.author %></em></h5>
+            <h5>Organization: <em><%= @tutorial.organization %></em></h5>
             <p> <%= raw @tutorial.content %> </p>
               <div class="text-right" id="test">
                 <h3><small>
