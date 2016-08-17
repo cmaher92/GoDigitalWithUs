@@ -1,7 +1,8 @@
-<h2 id="popular-title">Popular Tutorials</h2>
+<h2>Popular Tutorials</h2>
+<hr class="blue">
 <div class="row">
   <% @tutorials.each do |tutorial| %>
-    <div class="col-sm-6 card-bottom-margin">
+    <div class="col-sm-6 feed-card-bottom-margin">
       <%= link_to tutorial, :class => "remove-text-decoration" do %>
         <div class="card card-hover hover">
           <div class="card-text">

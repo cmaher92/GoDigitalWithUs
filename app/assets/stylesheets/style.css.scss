@@ -90,6 +90,15 @@ a {
   }
 }
 
+a.remove-text-decoration,
+a.remove-text-decoration:hover {
+  text-decoration: none;
+}
+
+.content-margin-bottom {
+  margin-bottom: 30px;
+}
+
 /* header */
 nav.navbar {
   background-color: $primary-darkest;
@@ -129,22 +138,12 @@ a.navbar-brand {
 }
 
 /* nav bar */
- 
- nav {
+nav {
    border-radius: 0 !important;
    -moz-border-radius: 0 !important;
  }
- 
- .navbar-default {
-   background-color: $cool-blue-lighter;
-   border: 0;
-   margin-bottom: 0px;
-   margin-top: 15px;
- }
- 
 
 /* sticky-footer hackery */
-
 html, body {
   height: 93%;
 }
@@ -168,7 +167,6 @@ footer:after {
 }
 
 /* footer */
-
 footer {
   padding: 70px 0px 200px 0px;
   background-color: $primary-darkest;
@@ -186,6 +184,7 @@ footer {
   }
 }
 
+/* buttons */
 .primary-button {
   appearance: none;
   background-color: $primary;
@@ -319,68 +318,18 @@ footer {
   font-weight: 400;
 }
 
-a.remove-text-decoration,
-a.remove-text-decoration:hover {
-  text-decoration: none;
-}
-
-.card-bottom-margin {
-  margin-bottom: 25px;
-}
-
-.content-margin-bottom {
-  margin-bottom: 30px;
-}
-
-/* main page */
+/* home page */
 .main-page {
   background-color: $gray-lightest;
-  .footer {
-    margin-bottom: 25px;
-  }
-
   .right-col {
     h3 {
-      padding-top: 15px;
-      border-bottom: 1px solid $gray-light;
-      padding-bottom: 5px;
-    }
-  }
-
-  #popular-title {
-    border-bottom: 1px solid $gray-light;
-    padding-bottom: 5px;
-  }
-}
-
-.main {
-  width: 100%;
-  height: 300px;
-  background-image: url("http://i.imgur.com/hmZXWQJ.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  .main-text {
-    background-color: rgba(255, 255, 255, .8);
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: $primary-darkest;
-    padding-top: 100px;
-    h1 {
-      font-size: 80px;
-      color: black;
-    }
-    h3 {
-      color: black;
+      padding-top: 10px;
     }
   }
 }
 
-.main-title {
-  color: $green;
+.feed-card-bottom-margin {
+  margin-bottom: 25px;
 }
 
 /* tutorial pages */
@@ -388,7 +337,7 @@ a.remove-text-decoration:hover {
   min-height: 800px;
 }
 
-/* Registration & Login Forms */
+/* registration & login forms */
 .flex-center {
   display: flex;
   justify-content: center;
@@ -400,35 +349,6 @@ a.remove-text-decoration:hover {
 
 .margin-bottom {
   margin-bottom: 50px;
-}
-
-.page-wrap {
-  width: 600px;
-  margin: 15px auto;
-  position: relative;
-}
-
-.sidebar {
-  height: 100px;
-  width: 190px;
-  position: relative;
-  // margin-left: 410px;
-}
-
-// Tutorial card
-
-.tutorial-card {
-  width: 66%;
-}
-
-.tutorial-nav {
-  width: 33%;
-}
-
-// Step
-
-.step {
-  margin: 2em 0 2em 0;
 }
 
 /* special headings */
@@ -495,15 +415,7 @@ h2.style-guide, h4.creation-guide {
   color: $cool-blue-lighter;
 }
 
-
-
-
 abbr[title], abbr[data-original-title] {
     cursor: auto;
     border-bottom: none;
-}
-
-
-
-.searchbar {
 }

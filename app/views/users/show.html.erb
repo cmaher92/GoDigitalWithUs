@@ -1,22 +1,14 @@
 <div class="content-wrap">
   <div class="container content-margin-bottom">
     <div class="container flex-column">
-      <div class="col-md-12">
-        <h2 id="popular-title">Your created tutorials</h2>
-        <div class="row">
-          <% @tutorials.each do |tutorial| %>
-            <div class="col-sm-6 card-bottom-margin">
-              <%= link_to tutorial, :class => "remove-text-decoration" do %>
-                <div class="card card-hover hover">
-                  <div class="card-text">
-                    <h3 class="card-title"><%= tutorial.title %></h3>
-                    <h5 class="tagline"><%= tutorial.tagline %></h5>
-                  </div>
-                </div>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
+      <div class="col-md-offset-2 col-md-8">
+        <h2 class="page-title">Your Created Tutorials</h2>
+        <hr class="blue">
+        <% @tutorials.each do |tutorial| %>
+          <div class="row">
+            <%= link_to tutorial.title, tutorial %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
