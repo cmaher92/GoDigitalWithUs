@@ -10,8 +10,6 @@
 
           <% if !@tutorial.author.nil? && !@tutorial.author.empty? %>
             <h6 class="byline">Author: <%= @tutorial.author %> </h6>
-          <% else %>
-            <h6 class="byline">Author: <%= @tutorial.user.email %> </h6>
           <% end %>
 
           <% if !@tutorial.organization.nil? && !@tutorial.organization.empty? %>
